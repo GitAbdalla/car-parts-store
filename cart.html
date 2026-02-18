@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>السلة | AutoParts Egypt</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><div class="logo-icon">🔧</div>Auto<span>Parts</span></a>
+      <div class="nav-links">
+        <a href="index.html">الرئيسية / Home</a>
+        <a href="catalog.html">القطع / Parts</a>
+        <a href="admin/index.html">لوحة التحكم / Admin</a>
+      </div>
+      <a href="cart.html" class="nav-cart active">🛒 <span>السلة</span><span class="cart-badge" style="display:none">0</span></a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <h1 class="ar">🛒 سلة المشتريات / Shopping Cart</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="cart-layout">
+      <div>
+        <div id="cart-items" class="cart-items"></div>
+
+        <div class="checkout-form mt-3" id="checkout-section">
+          <h3 class="ar">📋 بيانات التوصيل / Delivery Details</h3>
+          <div class="shipping-notice mb-2">
+            ✅ السعر شامل التوصيل لحد بابك — Price includes delivery to your door
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>الاسم بالكامل / Full Name *</label>
+              <input type="text" id="checkout-name" class="form-control" placeholder="أحمد محمد">
+            </div>
+            <div class="form-group">
+              <label>رقم الموبايل / Phone *</label>
+              <input type="tel" id="checkout-phone" class="form-control" placeholder="01012345678">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>المحافظة / City</label>
+              <select id="checkout-city" class="form-control">
+                <option>القاهرة</option><option>الجيزة</option><option>الإسكندرية</option>
+                <option>المنصورة</option><option>طنطا</option><option>أسيوط</option>
+                <option>الأقصر</option><option>أسوان</option><option>بورسعيد</option>
+                <option>السويس</option><option>الإسماعيلية</option><option>أخرى</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>العنوان بالتفصيل / Address</label>
+              <input type="text" id="checkout-address" class="form-control" placeholder="الشارع، المنطقة، رقم العمارة">
+            </div>
+          </div>
+          <button class="btn btn-gold btn-lg w-full mt-2" onclick="placeOrder()" style="font-size:18px">
+            ✅ تأكيد الطلب / Place Order
+          </button>
+        </div>
+      </div>
+
+      <div class="cart-summary">
+        <h3 class="ar">ملخص الطلب / Order Summary</h3>
+        <div id="cart-summary-details"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" style="margin-top:48px">
+    <div class="container"><div class="footer-bottom"><p>© 2026 AutoParts Egypt. All rights reserved.</p></div></div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

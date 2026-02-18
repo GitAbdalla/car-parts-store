@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة التحكم | AutoParts Admin</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand"><div class="logo-icon">🔧</div>Auto<span>Parts</span> <span style="font-size:13px;color:var(--gray-400);margin-left:8px">ADMIN</span></a>
+      <div class="nav-links">
+        <a href="../index.html">← العودة للمتجر / Back to Store</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <nav class="sidebar-nav">
+        <a href="index.html" class="active"><span class="nav-icon">📊</span> لوحة التحكم / Dashboard</a>
+        <a href="parts.html"><span class="nav-icon">🔧</span> إدارة القطع / Parts</a>
+        <a href="pricing.html"><span class="nav-icon">💰</span> سعر الصرف / Pricing</a>
+        <a href="orders.html"><span class="nav-icon">📦</span> الطلبات / Orders</a>
+      </nav>
+    </aside>
+
+    <main class="admin-content">
+      <h1 class="ar">📊 لوحة التحكم</h1>
+      <p class="subtitle">Dashboard — Overview of your store</p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon blue">📦</div>
+          <div><div id="stat-orders" class="stat-value">0</div><div class="stat-label">إجمالي الطلبات / Total Orders</div></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon green">💰</div>
+          <div><div id="stat-revenue" class="stat-value">0</div><div class="stat-label">الإيرادات / Revenue</div></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon gold">🔧</div>
+          <div><div id="stat-parts" class="stat-value">0</div><div class="stat-label">عدد القطع / Parts Count</div></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon purple">📈</div>
+          <div><div id="stat-rate" class="stat-value">0</div><div class="stat-label">سعر الصرف / Exchange Rate</div></div>
+        </div>
+      </div>
+
+      <div class="admin-table-wrap">
+        <div class="admin-table-header">
+          <h3>آخر الطلبات / Recent Orders</h3>
+          <a href="orders.html" class="btn btn-outline btn-sm">عرض الكل →</a>
+        </div>
+        <table class="admin-table">
+          <thead><tr>
+            <th>#</th><th>العميل</th><th>التاريخ</th><th>القطع</th><th>الإجمالي</th><th>الحالة</th>
+          </tr></thead>
+          <tbody id="recent-orders"></tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+  <script src="../js/app.js"></script>
+</body>
+</html>

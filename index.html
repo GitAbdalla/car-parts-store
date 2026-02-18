@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قطع غيار السيارات | AutoParts Egypt</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-icon">🔧</div>
+        Auto<span>Parts</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">الرئيسية / Home</a>
+        <a href="catalog.html?brand=BMW&model=3 Series&year=2020">القطع / Parts</a>
+        <a href="admin/index.html">لوحة التحكم / Admin</a>
+      </div>
+      <a href="cart.html" class="nav-cart">
+        🛒 <span>السلة</span>
+        <span class="cart-badge" style="display:none">0</span>
+      </a>
+      <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('hidden')">☰</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1 class="ar">دوّر على قطعة غيار <span>عربيتك</span></h1>
+      <p>قطع غيار أصلية مستوردة — توصيل لحد الباب — ضمان على كل قطعة</p>
+
+      <div class="car-selector">
+        <h3 class="ar">🚗 اختار عربيتك وهنلاقيلك القطعة</h3>
+        <div class="selector-grid">
+          <div class="form-group">
+            <label>الماركة / Brand</label>
+            <select id="brand-select" class="form-control">
+              <option value="">اختر الماركة / Select Brand</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>الموديل / Model</label>
+            <select id="model-select" class="form-control">
+              <option value="">اختر الموديل / Select Model</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>السنة / Year</label>
+            <select id="year-select" class="form-control">
+              <option value="">اختر السنة / Select Year</option>
+            </select>
+          </div>
+          <button class="btn btn-gold btn-lg" onclick="searchParts()">🔍 ابحث</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section class="brands-bar">
+    <div class="brand-item">
+      <div class="brand-logo">🇩🇪</div>
+      <span>BMW</span>
+    </div>
+    <div class="brand-item">
+      <div class="brand-logo">⭐</div>
+      <span>Mercedes-Benz</span>
+    </div>
+  </section>
+
+  <!-- FEATURED PARTS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title text-center ar">قطع غيار مميزة</h2>
+      <p class="section-subtitle text-center">Featured Parts — Popular items available now</p>
+      <div id="featured-parts" class="grid-4"></div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section" style="background:var(--white)">
+    <div class="container">
+      <h2 class="section-title text-center ar">ليه تشتري مننا؟</h2>
+      <p class="section-subtitle text-center">Why Choose AutoParts Egypt?</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h4 class="ar">قطع مستوردة</h4>
+          <p>Genuine imported parts from original manufacturers worldwide</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <h4 class="ar">توصيل لحد الباب</h4>
+          <p>Door-to-door delivery across Egypt — shipping included in the price</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✅</div>
+          <h4 class="ar">ضمان على كل قطعة</h4>
+          <p>Full warranty on every part — quality guaranteed or your money back</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h4 class="ar">أسعار منافسة</h4>
+          <p>Competitive EGP pricing — no hidden fees, no surprises</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="navbar-brand" style="color:var(--white)">
+            <div class="logo-icon">🔧</div> Auto<span>Parts</span>
+          </div>
+          <p>قطع غيار أصلية مستوردة للسيارات الألمانية في مصر. توصيل لحد بابك.</p>
+          <p>Genuine imported spare parts for German cars in Egypt.</p>
+        </div>
+        <div>
+          <h4>روابط سريعة</h4>
+          <a href="index.html">الرئيسية / Home</a>
+          <a href="catalog.html?brand=BMW&model=3 Series&year=2020">BMW قطع</a>
+          <a href="catalog.html?brand=Mercedes-Benz&model=C-Class&year=2020">Mercedes قطع</a>
+          <a href="cart.html">السلة / Cart</a>
+        </div>
+        <div>
+          <h4>الماركات</h4>
+          <a href="catalog.html?brand=BMW&model=3 Series&year=2020">BMW 3 Series</a>
+          <a href="catalog.html?brand=BMW&model=X5&year=2020">BMW X5</a>
+          <a href="catalog.html?brand=Mercedes-Benz&model=C-Class&year=2020">Mercedes C-Class</a>
+          <a href="catalog.html?brand=Mercedes-Benz&model=GLE&year=2020">Mercedes GLE</a>
+        </div>
+        <div>
+          <h4>تواصل معانا</h4>
+          <a href="#">📞 01012345678</a>
+          <a href="#">📧 info@autoparts-eg.com</a>
+          <a href="#">📍 القاهرة، مصر</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AutoParts Egypt. All rights reserved. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

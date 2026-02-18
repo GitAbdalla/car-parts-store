@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إدارة القطع | AutoParts Admin</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand"><div class="logo-icon">🔧</div>Auto<span>Parts</span> <span style="font-size:13px;color:var(--gray-400);margin-left:8px">ADMIN</span></a>
+      <div class="nav-links"><a href="../index.html">← العودة للمتجر</a></div>
+    </div>
+  </nav>
+
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <nav class="sidebar-nav">
+        <a href="index.html"><span class="nav-icon">📊</span> لوحة التحكم / Dashboard</a>
+        <a href="parts.html" class="active"><span class="nav-icon">🔧</span> إدارة القطع / Parts</a>
+        <a href="pricing.html"><span class="nav-icon">💰</span> سعر الصرف / Pricing</a>
+        <a href="orders.html"><span class="nav-icon">📦</span> الطلبات / Orders</a>
+      </nav>
+    </aside>
+
+    <main class="admin-content">
+      <h1 class="ar">🔧 إدارة القطع</h1>
+      <p class="subtitle">Parts Management — <span id="parts-count"></span></p>
+
+      <div class="flex justify-between items-center mb-3">
+        <div class="form-group" style="margin:0;width:400px">
+          <input type="text" id="admin-parts-search" class="form-control" placeholder="🔍 بحث بالاسم أو رقم القطعة...">
+        </div>
+        <button class="btn btn-primary" onclick="showToast('➕ إضافة قطعة جديدة — (mockup mode)')">➕ إضافة قطعة / Add Part</button>
+      </div>
+
+      <div class="admin-table-wrap">
+        <div style="overflow-x:auto">
+          <table class="admin-table">
+            <thead><tr>
+              <th>ID</th><th>الاسم / Name</th><th>الماركة / Car</th><th>OEM</th><th>USD</th><th>EGP</th><th>الحالة</th><th></th>
+            </tr></thead>
+            <tbody id="parts-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../js/app.js"></script>
+</body>
+</html>

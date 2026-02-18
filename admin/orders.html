@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إدارة الطلبات | AutoParts Admin</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand"><div class="logo-icon">🔧</div>Auto<span>Parts</span> <span style="font-size:13px;color:var(--gray-400);margin-left:8px">ADMIN</span></a>
+      <div class="nav-links"><a href="../index.html">← العودة للمتجر</a></div>
+    </div>
+  </nav>
+
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <nav class="sidebar-nav">
+        <a href="index.html"><span class="nav-icon">📊</span> لوحة التحكم / Dashboard</a>
+        <a href="parts.html"><span class="nav-icon">🔧</span> إدارة القطع / Parts</a>
+        <a href="pricing.html"><span class="nav-icon">💰</span> سعر الصرف / Pricing</a>
+        <a href="orders.html" class="active"><span class="nav-icon">📦</span> الطلبات / Orders</a>
+      </nav>
+    </aside>
+
+    <main class="admin-content">
+      <h1 class="ar">📦 إدارة الطلبات</h1>
+      <p class="subtitle">Orders Management — Track and update order status</p>
+
+      <div class="admin-table-wrap">
+        <div class="admin-table-header">
+          <h3>كل الطلبات / All Orders</h3>
+        </div>
+        <div style="overflow-x:auto">
+          <table class="admin-table">
+            <thead><tr>
+              <th>#</th><th>العميل</th><th>الموبايل</th><th>المدينة</th><th>التاريخ</th><th>القطع</th><th>الإجمالي</th><th>الحالة</th><th>تعديل</th>
+            </tr></thead>
+            <tbody id="orders-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../js/app.js"></script>
+</body>
+</html>
