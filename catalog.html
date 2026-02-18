@@ -1,56 +1,219 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>قطع الغيار | AutoParts Egypt</title>
+  <title>Catalog | AutoParts EG</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>tailwind.config={theme:{extend:{colors:{dark:{50:'#e8e8ef',100:'#b0b0c0',200:'#8888a0',300:'#5a5a72',400:'#3a3a4a',500:'#2a2a3a',600:'#1e1e2a',700:'#16161f',800:'#111118',900:'#0a0a0f'},accent:{DEFAULT:'#3b82f6',light:'#60a5fa',dark:'#1d4ed8'}},fontFamily:{sans:['Inter','sans-serif'],cairo:['Cairo','sans-serif']}}}}</script>
 </head>
-<body>
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="navbar-brand"><div class="logo-icon">🔧</div>Auto<span>Parts</span></a>
-      <div class="nav-links">
-        <a href="index.html">الرئيسية / Home</a>
-        <a href="catalog.html" class="active">القطع / Parts</a>
-        <a href="admin/index.html">لوحة التحكم / Admin</a>
+<body class="bg-dark-900 text-dark-50">
+
+  <!-- NAV -->
+  <nav class="nav-glass fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center">
+          <i class="fa-solid fa-gear text-white text-lg"></i>
+        </div>
+        <span class="text-lg font-bold">AutoParts <span class="text-accent-light font-light">EG</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-dark-200">
+        <a href="index.html" class="hover:text-dark-50 transition-colors">Home</a>
+        <a href="catalog.html" class="text-accent-light">Catalog</a>
+        <a href="admin/" class="hover:text-dark-50 transition-colors">Admin</a>
       </div>
-      <a href="cart.html" class="nav-cart">🛒 <span>السلة</span><span class="cart-badge" style="display:none">0</span></a>
-      <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('hidden')">☰</button>
+      <a href="cart.html" class="relative p-2 rounded-lg hover:bg-dark-700 transition-colors">
+        <i class="fa-solid fa-cart-shopping text-dark-200"></i>
+        <span class="cart-badge absolute -top-1 -right-1 w-5 h-5 bg-accent text-white text-xs font-bold rounded-full items-center justify-center hidden">0</span>
+      </a>
     </div>
   </nav>
 
-  <div class="page-header">
-    <div class="container">
-      <h1 id="catalog-header" class="ar">قطع الغيار</h1>
-      <div class="breadcrumb">
-        <a href="index.html">الرئيسية</a> / <span id="breadcrumb-car">القطع</span>
+  <div class="pt-24 pb-16 max-w-7xl mx-auto px-6">
+    <!-- Header -->
+    <div class="mb-10 fade-in">
+      <h1 class="text-3xl font-black mb-2">Parts Catalog</h1>
+      <p class="text-dark-300">Mercedes-Benz W205 C-Class (2014-2021) &mdash; <span class="font-cairo">كتالوج قطع الغيار</span></p>
+    </div>
+
+    <!-- Search & Filter Bar -->
+    <div class="glass rounded-xl p-4 mb-8 flex flex-col md:flex-row gap-4 fade-in">
+      <div class="flex-1 relative">
+        <i class="fa-solid fa-search absolute left-4 top-1/2 -translate-y-1/2 text-dark-400"></i>
+        <input type="text" id="searchInput" placeholder="Search by OEM number, part name, or Arabic name..."
+          class="w-full bg-dark-700 border border-dark-500 rounded-lg pl-11 pr-4 py-3 text-dark-50 placeholder-dark-400 focus:border-accent focus:outline-none transition-colors">
+      </div>
+      <select id="sortSelect" class="bg-dark-700 border border-dark-500 rounded-lg px-4 py-3 text-dark-50 focus:border-accent focus:outline-none">
+        <option value="name">Sort: Name A-Z</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="oem">OEM Number</option>
+      </select>
+    </div>
+
+    <!-- Category Pills -->
+    <div class="flex gap-3 overflow-x-auto pb-4 mb-8 scrollbar-hide" id="catPills">
+      <button class="cat-pill active" data-cat="all">
+        <i class="fa-solid fa-border-all mr-1"></i> All
+      </button>
+    </div>
+
+    <!-- Parts Count -->
+    <div class="flex items-center justify-between mb-6 text-sm text-dark-300">
+      <span id="partsCount"></span>
+      <div class="flex items-center gap-2">
+        <button onclick="setView('grid')" id="gridBtn" class="p-2 rounded hover:bg-dark-700 text-accent"><i class="fa-solid fa-grid-2"></i></button>
+        <button onclick="setView('list')" id="listBtn" class="p-2 rounded hover:bg-dark-700 text-dark-400"><i class="fa-solid fa-list"></i></button>
+      </div>
+    </div>
+
+    <!-- Parts Grid -->
+    <div id="partsGrid" class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+    </div>
+
+    <!-- Parts List (hidden by default) -->
+    <div id="partsList" class="hidden">
+      <div class="card overflow-hidden">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>OEM</th>
+              <th>Part Name</th>
+              <th class="font-cairo">الاسم</th>
+              <th>Category</th>
+              <th>USD</th>
+              <th>EGP</th>
+              <th>Stock</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="partsTableBody"></tbody>
+        </table>
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="catalog-layout">
-      <aside class="catalog-sidebar">
-        <h3 class="ar">🔍 بحث برقم القطعة</h3>
-        <div class="form-group">
-          <input type="text" id="part-search" class="form-control" placeholder="OEM / اسم القطعة...">
-        </div>
-        <h3 class="ar" style="margin-top:24px">📁 الفئات / Categories</h3>
-        <div class="filter-group" id="filter-categories"></div>
-      </aside>
-      <main>
-        <div class="catalog-toolbar">
-          <div id="results-count" class="results-count"></div>
-        </div>
-        <div id="parts-grid" class="parts-grid"></div>
-      </main>
-    </div>
-  </div>
-
-  <footer class="footer" style="margin-top:48px">
-    <div class="container"><div class="footer-bottom"><p>© 2026 AutoParts Egypt. All rights reserved.</p></div></div>
-  </footer>
   <script src="js/app.js"></script>
+  <script>
+    let currentCat = 'all';
+    let currentView = 'grid';
+    let currentSearch = '';
+    let currentSort = 'name';
+
+    // Build category pills
+    const pillsContainer = document.getElementById('catPills');
+    CATEGORIES.forEach(cat => {
+      const count = PARTS.filter(p => p.category === cat.id).length;
+      pillsContainer.innerHTML += `<button class="cat-pill" data-cat="${cat.id}"><i class="fa-solid ${cat.icon} mr-1"></i>${cat.nameEn} (${count})</button>`;
+    });
+
+    // Check URL param
+    const urlCat = new URLSearchParams(window.location.search).get('cat');
+    if (urlCat) { currentCat = urlCat; }
+
+    // Event listeners
+    document.querySelectorAll('.cat-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        currentCat = pill.dataset.cat;
+        render();
+      });
+      if (pill.dataset.cat === currentCat) { pill.classList.add('active'); document.querySelector('.cat-pill[data-cat="all"]')?.classList.remove('active'); }
+    });
+
+    document.getElementById('searchInput').addEventListener('input', e => { currentSearch = e.target.value.toLowerCase(); render(); });
+    document.getElementById('sortSelect').addEventListener('change', e => { currentSort = e.target.value; render(); });
+
+    function setView(v) {
+      currentView = v;
+      document.getElementById('partsGrid').classList.toggle('hidden', v !== 'grid');
+      document.getElementById('partsList').classList.toggle('hidden', v !== 'list');
+      document.getElementById('gridBtn').classList.toggle('text-accent', v === 'grid');
+      document.getElementById('gridBtn').classList.toggle('text-dark-400', v !== 'grid');
+      document.getElementById('listBtn').classList.toggle('text-accent', v === 'list');
+      document.getElementById('listBtn').classList.toggle('text-dark-400', v !== 'list');
+      render();
+    }
+
+    function getFiltered() {
+      let parts = [...PARTS];
+      if (currentCat !== 'all') parts = parts.filter(p => p.category === currentCat);
+      if (currentSearch) {
+        parts = parts.filter(p =>
+          p.oem.toLowerCase().includes(currentSearch) ||
+          p.nameEn.toLowerCase().includes(currentSearch) ||
+          p.nameAr.includes(currentSearch)
+        );
+      }
+      switch (currentSort) {
+        case 'price-asc': parts.sort((a,b) => a.priceUsd - b.priceUsd); break;
+        case 'price-desc': parts.sort((a,b) => b.priceUsd - a.priceUsd); break;
+        case 'oem': parts.sort((a,b) => a.oem.localeCompare(b.oem)); break;
+        default: parts.sort((a,b) => a.nameEn.localeCompare(b.nameEn));
+      }
+      return parts;
+    }
+
+    function render() {
+      const parts = getFiltered();
+      document.getElementById('partsCount').textContent = `${parts.length} parts found`;
+
+      // Grid view
+      const grid = document.getElementById('partsGrid');
+      grid.innerHTML = parts.map(p => {
+        const cat = CATEGORIES.find(c => c.id === p.category);
+        return `
+          <div class="card overflow-hidden group">
+            <div class="part-img-wrap h-40 relative">
+              <div class="flex flex-col items-center justify-center gap-2 relative z-10">
+                <i class="fa-solid ${cat ? cat.icon : 'fa-car'} text-3xl text-dark-400 group-hover:text-accent/40 transition-colors"></i>
+                <span class="oem-badge">${p.oem}</span>
+              </div>
+              ${p.scraped ? '<div class="absolute top-2 right-2 z-10 text-[10px] bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full border border-green-500/30"><i class="fa-solid fa-database mr-1"></i>EPC</div>' : ''}
+              <div class="absolute top-2 left-2 z-10 flex items-center gap-1 text-[10px] ${p.inStock ? 'text-green-400' : 'text-red-400'}">
+                <span class="stock-dot ${p.inStock ? 'in-stock' : 'out-of-stock'}"></span>
+                ${p.inStock ? 'In Stock' : 'On Order'}
+              </div>
+            </div>
+            <div class="p-4">
+              <a href="part.html?id=${p.id}" class="font-semibold text-sm hover:text-accent-light transition-colors block mb-1">${p.nameEn}</a>
+              <div class="font-cairo text-xs text-dark-300 mb-1">${p.nameAr}</div>
+              <div class="text-[10px] text-dark-400 mb-3">${p.chassis} ${p.model} | ${p.years}</div>
+              <div class="flex items-end justify-between">
+                <div>
+                  <div class="text-lg font-bold">${fmtEGP(p.priceEgp)}</div>
+                  <div class="text-xs text-dark-400">${fmtUSD(p.priceUsd)}</div>
+                </div>
+                <button onclick="addToCart(${p.id})" class="w-9 h-9 rounded-lg bg-accent/10 hover:bg-accent text-accent hover:text-white flex items-center justify-center transition-all text-sm">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>`;
+      }).join('');
+
+      // Table view
+      document.getElementById('partsTableBody').innerHTML = parts.map(p => {
+        const cat = CATEGORIES.find(c => c.id === p.category);
+        return `
+          <tr>
+            <td><span class="oem-badge">${p.oem}</span></td>
+            <td><a href="part.html?id=${p.id}" class="hover:text-accent-light transition-colors">${p.nameEn}</a></td>
+            <td class="font-cairo text-dark-300">${p.nameAr}</td>
+            <td class="text-dark-300 text-xs">${cat ? cat.nameEn : ''}</td>
+            <td class="text-dark-300">${fmtUSD(p.priceUsd)}</td>
+            <td class="font-semibold">${fmtEGP(p.priceEgp)}</td>
+            <td><span class="stock-dot ${p.inStock ? 'in-stock' : 'out-of-stock'}"></span></td>
+            <td><button onclick="addToCart(${p.id})" class="text-accent hover:text-accent-light text-sm"><i class="fa-solid fa-cart-plus"></i></button></td>
+          </tr>`;
+      }).join('');
+    }
+
+    render();
+  </script>
 </body>
 </html>

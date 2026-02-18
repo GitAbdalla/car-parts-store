@@ -1,72 +1,169 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تفاصيل القطعة | AutoParts Egypt</title>
+  <title>Part Detail | AutoParts EG</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>tailwind.config={theme:{extend:{colors:{dark:{50:'#e8e8ef',100:'#b0b0c0',200:'#8888a0',300:'#5a5a72',400:'#3a3a4a',500:'#2a2a3a',600:'#1e1e2a',700:'#16161f',800:'#111118',900:'#0a0a0f'},accent:{DEFAULT:'#3b82f6',light:'#60a5fa',dark:'#1d4ed8'}},fontFamily:{sans:['Inter','sans-serif'],cairo:['Cairo','sans-serif']}}}}</script>
 </head>
-<body>
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="navbar-brand"><div class="logo-icon">🔧</div>Auto<span>Parts</span></a>
-      <div class="nav-links">
-        <a href="index.html">الرئيسية / Home</a>
-        <a href="catalog.html">القطع / Parts</a>
-        <a href="admin/index.html">لوحة التحكم / Admin</a>
+<body class="bg-dark-900 text-dark-50">
+
+  <nav class="nav-glass fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center"><i class="fa-solid fa-gear text-white text-lg"></i></div>
+        <span class="text-lg font-bold">AutoParts <span class="text-accent-light font-light">EG</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-dark-200">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="admin/">Admin</a>
       </div>
-      <a href="cart.html" class="nav-cart">🛒 <span>السلة</span><span class="cart-badge" style="display:none">0</span></a>
+      <a href="cart.html" class="relative p-2 rounded-lg hover:bg-dark-700 transition-colors">
+        <i class="fa-solid fa-cart-shopping text-dark-200"></i>
+        <span class="cart-badge absolute -top-1 -right-1 w-5 h-5 bg-accent text-white text-xs font-bold rounded-full items-center justify-center hidden">0</span>
+      </a>
     </div>
   </nav>
 
-  <div class="page-header">
-    <div class="container">
-      <div class="breadcrumb">
-        <a href="index.html">الرئيسية</a> / <a href="catalog.html">القطع</a> / <span id="breadcrumb-part">تفاصيل</span>
-      </div>
-    </div>
+  <div class="pt-24 pb-16 max-w-7xl mx-auto px-6" id="partDetail">
+    <!-- Populated by JS -->
   </div>
 
-  <div class="container">
-    <div class="part-detail">
-      <div class="part-detail-img" id="part-icon">🔧</div>
-      <div class="part-detail-info">
-        <h1 id="part-name-ar" class="ar"></h1>
-        <div id="part-name-en" class="en-name"></div>
-        <div id="part-stock"></div>
-        <div id="part-price" class="part-detail-price"></div>
-
-        <div class="shipping-notice">
-          ✅ <span>السعر شامل التوصيل لحد بابك في أي مكان في مصر<br>Price includes door-to-door delivery anywhere in Egypt</span>
-        </div>
-
-        <div class="detail-meta">
-          <div class="detail-meta-row"><dt>رقم القطعة OEM</dt><dd id="part-oem" style="font-family:monospace"></dd></div>
-          <div class="detail-meta-row"><dt>رقم بديل Alternative</dt><dd id="part-alt-oem" style="font-family:monospace"></dd></div>
-          <div class="detail-meta-row"><dt>الماركة / Brand</dt><dd id="part-brand"></dd></div>
-          <div class="detail-meta-row"><dt>الفئة / Category</dt><dd id="part-category"></dd></div>
-        </div>
-
-        <h4 style="margin-bottom:12px">الكمية / Quantity</h4>
-        <div class="qty-selector">
-          <button class="qty-btn" onclick="changeQty(-1)">−</button>
-          <input type="number" id="qty-input" class="qty-input" value="1" min="1" max="99">
-          <button class="qty-btn" onclick="changeQty(1)">+</button>
-        </div>
-
-        <button id="add-to-cart-btn" class="btn btn-gold btn-lg w-full" style="font-size:18px">
-          🛒 أضف للسلة / Add to Cart
-        </button>
-
-        <h4 style="margin-top:32px;margin-bottom:8px">متوافق مع / Compatible with</h4>
-        <div id="compatibility-list" class="compatibility-list"></div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer" style="margin-top:48px">
-    <div class="container"><div class="footer-bottom"><p>© 2026 AutoParts Egypt. All rights reserved.</p></div></div>
-  </footer>
   <script src="js/app.js"></script>
+  <script>
+    const partId = parseInt(new URLSearchParams(window.location.search).get('id'));
+    const part = PARTS.find(p => p.id === partId);
+    const container = document.getElementById('partDetail');
+
+    if (!part) {
+      container.innerHTML = `<div class="text-center py-20"><h2 class="text-2xl font-bold mb-4">Part not found</h2><a href="catalog.html" class="btn-primary">Back to Catalog</a></div>`;
+    } else {
+      const cat = CATEGORIES.find(c => c.id === part.category);
+      const related = PARTS.filter(p => p.category === part.category && p.id !== part.id).slice(0, 4);
+
+      container.innerHTML = `
+        <!-- Breadcrumb -->
+        <div class="flex items-center gap-2 text-sm text-dark-400 mb-8 fade-in">
+          <a href="index.html" class="hover:text-dark-200 transition-colors">Home</a>
+          <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          <a href="catalog.html" class="hover:text-dark-200 transition-colors">Catalog</a>
+          <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          <a href="catalog.html?cat=${part.category}" class="hover:text-dark-200 transition-colors">${cat ? cat.nameEn : ''}</a>
+          <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          <span class="text-dark-200">${part.oem}</span>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-10 mb-16">
+          <!-- Image / Diagram -->
+          <div class="fade-in">
+            <div class="card part-img-wrap rounded-xl h-80 lg:h-96 relative">
+              <div class="flex flex-col items-center justify-center gap-4 relative z-10">
+                <i class="fa-solid ${cat ? cat.icon : 'fa-car'} text-6xl text-dark-400"></i>
+                <span class="oem-badge text-base px-4 py-1">${part.oem}</span>
+                <span class="text-xs text-dark-400">EPC Diagram Reference</span>
+              </div>
+              ${part.scraped ? '<div class="absolute top-4 right-4 z-10 bg-green-500/20 text-green-400 px-3 py-1 rounded-lg border border-green-500/30 text-sm"><i class="fa-solid fa-database mr-1"></i>Verified EPC Data</div>' : ''}
+            </div>
+            <div class="mt-4 flex gap-3">
+              <a href="${part.sourceUrl}" target="_blank" rel="noopener" class="btn-ghost text-xs flex-1 justify-center">
+                <i class="fa-solid fa-external-link mr-1"></i> View on EPC Source
+              </a>
+            </div>
+          </div>
+
+          <!-- Details -->
+          <div class="fade-in-right">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="stock-dot ${part.inStock ? 'in-stock' : 'out-of-stock'}"></span>
+              <span class="text-sm ${part.inStock ? 'text-green-400' : 'text-red-400'}">${part.inStock ? 'In Stock' : 'On Order (7-14 days)'}</span>
+            </div>
+
+            <h1 class="text-3xl font-black mb-2">${part.nameEn}</h1>
+            <h2 class="font-cairo text-xl text-dark-300 mb-6">${part.nameAr}</h2>
+
+            <!-- Price Box -->
+            <div class="card p-6 mb-6">
+              <div class="flex items-end gap-4 mb-4">
+                <div>
+                  <div class="text-xs text-dark-400 uppercase tracking-wider mb-1">Price (EGP)</div>
+                  <div class="text-4xl font-black">${fmtEGP(part.priceEgp)}</div>
+                </div>
+                <div class="text-dark-400 text-lg mb-1">${fmtUSD(part.priceUsd)}</div>
+              </div>
+              <div class="text-xs text-dark-400 mb-4">
+                <i class="fa-solid fa-calculator mr-1"></i>
+                Calculated: $${part.priceUsd.toFixed(2)} x ${EXCHANGE_RATE} = ${fmtEGP(part.priceEgp)}
+              </div>
+              <button onclick="addToCart(${part.id})" class="btn-primary w-full justify-center py-4 text-lg">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+
+            <!-- Specs -->
+            <div class="card p-6">
+              <h3 class="font-bold text-sm uppercase tracking-wider text-dark-300 mb-4">Specifications</h3>
+              <div class="space-y-3 text-sm">
+                <div class="flex justify-between py-2 border-b border-dark-600">
+                  <span class="text-dark-300">OEM Part Number</span>
+                  <span class="font-mono font-semibold">${part.oem}</span>
+                </div>
+                <div class="flex justify-between py-2 border-b border-dark-600">
+                  <span class="text-dark-300">Brand</span>
+                  <span>${part.brand}</span>
+                </div>
+                <div class="flex justify-between py-2 border-b border-dark-600">
+                  <span class="text-dark-300">Model</span>
+                  <span>${part.model}</span>
+                </div>
+                <div class="flex justify-between py-2 border-b border-dark-600">
+                  <span class="text-dark-300">Chassis</span>
+                  <span class="font-mono">${part.chassis}</span>
+                </div>
+                <div class="flex justify-between py-2 border-b border-dark-600">
+                  <span class="text-dark-300">Year Range</span>
+                  <span>${part.years}</span>
+                </div>
+                <div class="flex justify-between py-2 border-b border-dark-600">
+                  <span class="text-dark-300">Category</span>
+                  <span>${cat ? cat.nameEn : ''} <span class="font-cairo text-dark-400">(${cat ? cat.nameAr : ''})</span></span>
+                </div>
+                <div class="flex justify-between py-2">
+                  <span class="text-dark-300">Data Source</span>
+                  <span class="${part.scraped ? 'text-green-400' : 'text-dark-200'}">${part.scraped ? 'EPC Verified' : 'OEM Reference'}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Parts -->
+        ${related.length ? `
+        <div>
+          <h3 class="text-xl font-bold mb-6">Related Parts</h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            ${related.map(r => {
+              const rc = CATEGORIES.find(c => c.id === r.category);
+              return `
+                <a href="part.html?id=${r.id}" class="card p-4 group">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-lg bg-dark-600 flex items-center justify-center">
+                      <i class="fa-solid ${rc ? rc.icon : 'fa-car'} text-dark-300 group-hover:text-accent transition-colors"></i>
+                    </div>
+                    <span class="oem-badge text-[10px]">${r.oem}</span>
+                  </div>
+                  <div class="font-semibold text-sm mb-1 group-hover:text-accent-light transition-colors">${r.nameEn}</div>
+                  <div class="font-cairo text-xs text-dark-300 mb-2">${r.nameAr}</div>
+                  <div class="font-bold">${fmtEGP(r.priceEgp)}</div>
+                </a>`;
+            }).join('')}
+          </div>
+        </div>` : ''}
+      `;
+    }
+  </script>
 </body>
 </html>

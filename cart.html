@@ -1,81 +1,131 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>السلة | AutoParts Egypt</title>
+  <title>Cart | AutoParts EG</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>tailwind.config={theme:{extend:{colors:{dark:{50:'#e8e8ef',100:'#b0b0c0',200:'#8888a0',300:'#5a5a72',400:'#3a3a4a',500:'#2a2a3a',600:'#1e1e2a',700:'#16161f',800:'#111118',900:'#0a0a0f'},accent:{DEFAULT:'#3b82f6',light:'#60a5fa',dark:'#1d4ed8'}},fontFamily:{sans:['Inter','sans-serif'],cairo:['Cairo','sans-serif']}}}}</script>
 </head>
-<body>
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="navbar-brand"><div class="logo-icon">🔧</div>Auto<span>Parts</span></a>
-      <div class="nav-links">
-        <a href="index.html">الرئيسية / Home</a>
-        <a href="catalog.html">القطع / Parts</a>
-        <a href="admin/index.html">لوحة التحكم / Admin</a>
+<body class="bg-dark-900 text-dark-50">
+
+  <nav class="nav-glass fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center"><i class="fa-solid fa-gear text-white text-lg"></i></div>
+        <span class="text-lg font-bold">AutoParts <span class="text-accent-light font-light">EG</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-dark-200">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="admin/">Admin</a>
       </div>
-      <a href="cart.html" class="nav-cart active">🛒 <span>السلة</span><span class="cart-badge" style="display:none">0</span></a>
+      <a href="cart.html" class="relative p-2 rounded-lg bg-dark-700">
+        <i class="fa-solid fa-cart-shopping text-accent-light"></i>
+        <span class="cart-badge absolute -top-1 -right-1 w-5 h-5 bg-accent text-white text-xs font-bold rounded-full items-center justify-center hidden">0</span>
+      </a>
     </div>
   </nav>
 
-  <div class="page-header">
-    <div class="container">
-      <h1 class="ar">🛒 سلة المشتريات / Shopping Cart</h1>
-    </div>
+  <div class="pt-24 pb-16 max-w-5xl mx-auto px-6">
+    <h1 class="text-3xl font-black mb-2 fade-in">Shopping Cart</h1>
+    <p class="text-dark-300 mb-8 font-cairo fade-in">عربة التسوق</p>
+
+    <div id="cartContent"></div>
   </div>
 
-  <div class="container">
-    <div class="cart-layout">
-      <div>
-        <div id="cart-items" class="cart-items"></div>
-
-        <div class="checkout-form mt-3" id="checkout-section">
-          <h3 class="ar">📋 بيانات التوصيل / Delivery Details</h3>
-          <div class="shipping-notice mb-2">
-            ✅ السعر شامل التوصيل لحد بابك — Price includes delivery to your door
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>الاسم بالكامل / Full Name *</label>
-              <input type="text" id="checkout-name" class="form-control" placeholder="أحمد محمد">
-            </div>
-            <div class="form-group">
-              <label>رقم الموبايل / Phone *</label>
-              <input type="tel" id="checkout-phone" class="form-control" placeholder="01012345678">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>المحافظة / City</label>
-              <select id="checkout-city" class="form-control">
-                <option>القاهرة</option><option>الجيزة</option><option>الإسكندرية</option>
-                <option>المنصورة</option><option>طنطا</option><option>أسيوط</option>
-                <option>الأقصر</option><option>أسوان</option><option>بورسعيد</option>
-                <option>السويس</option><option>الإسماعيلية</option><option>أخرى</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>العنوان بالتفصيل / Address</label>
-              <input type="text" id="checkout-address" class="form-control" placeholder="الشارع، المنطقة، رقم العمارة">
-            </div>
-          </div>
-          <button class="btn btn-gold btn-lg w-full mt-2" onclick="placeOrder()" style="font-size:18px">
-            ✅ تأكيد الطلب / Place Order
-          </button>
-        </div>
-      </div>
-
-      <div class="cart-summary">
-        <h3 class="ar">ملخص الطلب / Order Summary</h3>
-        <div id="cart-summary-details"></div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer" style="margin-top:48px">
-    <div class="container"><div class="footer-bottom"><p>© 2026 AutoParts Egypt. All rights reserved.</p></div></div>
-  </footer>
   <script src="js/app.js"></script>
+  <script>
+    function renderCart() {
+      const container = document.getElementById('cartContent');
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-20 card p-10">
+            <i class="fa-solid fa-cart-shopping text-5xl text-dark-500 mb-6"></i>
+            <h2 class="text-xl font-bold mb-2">Your cart is empty</h2>
+            <p class="text-dark-300 mb-6 font-cairo">العربة فاضية</p>
+            <a href="catalog.html" class="btn-primary">Browse Catalog</a>
+          </div>`;
+        return;
+      }
+
+      let itemsHtml = cart.map(item => {
+        const p = PARTS.find(x => x.id === item.id);
+        if (!p) return '';
+        const cat = CATEGORIES.find(c => c.id === p.category);
+        const lineTotal = p.priceEgp * item.qty;
+        return `
+          <div class="card p-5 flex flex-col sm:flex-row items-start sm:items-center gap-5 mb-4">
+            <div class="w-16 h-16 rounded-lg bg-dark-600 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid ${cat ? cat.icon : 'fa-car'} text-2xl text-dark-300"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <a href="part.html?id=${p.id}" class="font-semibold hover:text-accent-light transition-colors">${p.nameEn}</a>
+              <div class="font-cairo text-sm text-dark-300">${p.nameAr}</div>
+              <span class="oem-badge mt-1 inline-block">${p.oem}</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="flex items-center border border-dark-500 rounded-lg overflow-hidden">
+                <button onclick="changeQty(${p.id}, -1)" class="px-3 py-2 hover:bg-dark-600 text-dark-300 transition-colors"><i class="fa-solid fa-minus text-xs"></i></button>
+                <span class="px-4 py-2 text-sm font-semibold bg-dark-700">${item.qty}</span>
+                <button onclick="changeQty(${p.id}, 1)" class="px-3 py-2 hover:bg-dark-600 text-dark-300 transition-colors"><i class="fa-solid fa-plus text-xs"></i></button>
+              </div>
+              <div class="text-right min-w-[100px]">
+                <div class="font-bold">${fmtEGP(lineTotal)}</div>
+                <div class="text-xs text-dark-400">${fmtEGP(p.priceEgp)} each</div>
+              </div>
+              <button onclick="removeItem(${p.id})" class="p-2 rounded-lg hover:bg-red-500/10 text-dark-400 hover:text-red-400 transition-colors">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>`;
+      }).join('');
+
+      const total = getCartTotal();
+      const totalUsd = (total / EXCHANGE_RATE).toFixed(2);
+
+      container.innerHTML = `
+        ${itemsHtml}
+        <div class="card p-6 mt-6">
+          <div class="flex items-center justify-between mb-4 pb-4 border-b border-dark-500">
+            <span class="text-dark-300">Subtotal (${cart.reduce((s,c)=>s+c.qty,0)} items)</span>
+            <span class="text-xl font-bold">${fmtEGP(total)}</span>
+          </div>
+          <div class="flex items-center justify-between mb-6 text-sm text-dark-400">
+            <span>USD Equivalent</span>
+            <span>$${totalUsd}</span>
+          </div>
+          <div class="flex items-center justify-between mb-4 text-xs text-dark-400">
+            <span><i class="fa-solid fa-calculator mr-1"></i> Rate: 1 USD = ${EXCHANGE_RATE} EGP</span>
+            <span>Shipping calculated at checkout</span>
+          </div>
+          <button class="btn-primary w-full justify-center py-4 text-lg">
+            <i class="fa-solid fa-lock mr-2"></i>
+            Proceed to Checkout
+          </button>
+        </div>`;
+    }
+
+    function changeQty(id, delta) {
+      const item = cart.find(c => c.id === id);
+      if (item) {
+        item.qty += delta;
+        if (item.qty <= 0) { cart = cart.filter(c => c.id !== id); }
+        saveCart();
+        updateCartBadge();
+        renderCart();
+      }
+    }
+
+    function removeItem(id) {
+      removeFromCart(id);
+      renderCart();
+    }
+
+    renderCart();
+  </script>
 </body>
 </html>

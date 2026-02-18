@@ -1,154 +1,362 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>قطع غيار السيارات | AutoParts Egypt</title>
+  <title>AutoParts EG | OEM Mercedes Parts - Egypt</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: { 50:'#e8e8ef', 100:'#b0b0c0', 200:'#8888a0', 300:'#5a5a72', 400:'#3a3a4a', 500:'#2a2a3a', 600:'#1e1e2a', 700:'#16161f', 800:'#111118', 900:'#0a0a0f' },
+            accent: { DEFAULT:'#3b82f6', light:'#60a5fa', dark:'#1d4ed8' }
+          },
+          fontFamily: { sans:['Inter','sans-serif'], cairo:['Cairo','sans-serif'] }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">
-        <div class="logo-icon">🔧</div>
-        Auto<span>Parts</span>
+<body class="bg-dark-900 text-dark-50">
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav class="nav-glass fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center">
+          <i class="fa-solid fa-gear text-white text-lg"></i>
+        </div>
+        <div>
+          <span class="text-lg font-bold tracking-tight">AutoParts</span>
+          <span class="text-accent-light font-light ml-1">EG</span>
+        </div>
       </a>
-      <div class="nav-links">
-        <a href="index.html" class="active">الرئيسية / Home</a>
-        <a href="catalog.html?brand=BMW&model=3 Series&year=2020">القطع / Parts</a>
-        <a href="admin/index.html">لوحة التحكم / Admin</a>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-dark-200">
+        <a href="index.html" class="text-accent-light">Home</a>
+        <a href="catalog.html" class="hover:text-dark-50 transition-colors">Catalog</a>
+        <a href="admin/" class="hover:text-dark-50 transition-colors">Admin</a>
       </div>
-      <a href="cart.html" class="nav-cart">
-        🛒 <span>السلة</span>
-        <span class="cart-badge" style="display:none">0</span>
-      </a>
-      <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('hidden')">☰</button>
+
+      <div class="flex items-center gap-4">
+        <a href="cart.html" class="relative p-2 rounded-lg hover:bg-dark-700 transition-colors">
+          <i class="fa-solid fa-cart-shopping text-dark-200"></i>
+          <span class="cart-badge absolute -top-1 -right-1 w-5 h-5 bg-accent text-white text-xs font-bold rounded-full items-center justify-center hidden">0</span>
+        </a>
+      </div>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h1 class="ar">دوّر على قطعة غيار <span>عربيتك</span></h1>
-      <p>قطع غيار أصلية مستوردة — توصيل لحد الباب — ضمان على كل قطعة</p>
+  <!-- ═══ HERO ═══ -->
+  <section class="hero-mesh relative min-h-screen flex items-center pt-16 overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl"></div>
+      <!-- Grid lines -->
+      <div class="absolute inset-0" style="background-image: linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px); background-size: 60px 60px;"></div>
+    </div>
 
-      <div class="car-selector">
-        <h3 class="ar">🚗 اختار عربيتك وهنلاقيلك القطعة</h3>
-        <div class="selector-grid">
-          <div class="form-group">
-            <label>الماركة / Brand</label>
-            <select id="brand-select" class="form-control">
-              <option value="">اختر الماركة / Select Brand</option>
-            </select>
+    <!-- Car SVG silhouette -->
+    <svg class="car-silhouette-bg" viewBox="0 0 800 300" fill="currentColor">
+      <path d="M50,250 Q50,200 100,180 L200,170 Q250,100 350,90 L500,85 Q580,85 620,100 L700,160 Q750,170 770,200 Q780,240 770,250 Z M180,250 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0 M560,250 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0" />
+    </svg>
+
+    <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <div class="fade-in">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-dark-500 bg-dark-800/50 text-sm text-dark-200 mb-8">
+          <span class="stock-dot in-stock"></span>
+          Mercedes-Benz W205 OEM Parts
+        </div>
+
+        <h1 class="hero-title text-5xl lg:text-6xl font-black leading-tight mb-6">
+          Genuine OEM<br>
+          <span class="gradient-text">Mercedes Parts</span><br>
+          <span class="font-cairo text-3xl lg:text-4xl font-bold text-dark-200">قطع غيار مرسيدس اصلية</span>
+        </h1>
+
+        <p class="text-dark-200 text-lg mb-10 max-w-lg leading-relaxed">
+          Real EPC catalog data. Verified OEM part numbers. Direct pricing in EGP.
+          Built for the Egyptian automotive market.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="catalog.html" class="btn-primary text-lg px-8 py-4">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Browse Catalog
+          </a>
+          <a href="#categories" class="btn-ghost text-lg px-8 py-4">
+            <i class="fa-solid fa-grid-2"></i>
+            Categories
+          </a>
+        </div>
+
+        <!-- Trust indicators -->
+        <div class="mt-12 flex items-center gap-8 text-sm text-dark-300">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-shield-check text-accent"></i>
+            OEM Verified
           </div>
-          <div class="form-group">
-            <label>الموديل / Model</label>
-            <select id="model-select" class="form-control">
-              <option value="">اختر الموديل / Select Model</option>
-            </select>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-truck-fast text-accent"></i>
+            Egypt Delivery
           </div>
-          <div class="form-group">
-            <label>السنة / Year</label>
-            <select id="year-select" class="form-control">
-              <option value="">اختر السنة / Select Year</option>
-            </select>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-certificate text-accent"></i>
+            Genuine Parts
           </div>
-          <button class="btn btn-gold btn-lg" onclick="searchParts()">🔍 ابحث</button>
+        </div>
+      </div>
+
+      <!-- Hero Stats -->
+      <div class="fade-in-right hidden lg:grid grid-cols-2 gap-4">
+        <div class="card gradient-border p-6">
+          <div class="text-3xl font-black text-accent-light mb-2">76+</div>
+          <div class="text-sm text-dark-300">OEM Parts Listed</div>
+          <div class="text-xs text-dark-400 mt-1">Real EPC catalog data</div>
+        </div>
+        <div class="card gradient-border p-6">
+          <div class="text-3xl font-black text-accent-light mb-2">15</div>
+          <div class="text-sm text-dark-300">Categories</div>
+          <div class="text-xs text-dark-400 mt-1">Body, Lighting, Cooling & more</div>
+        </div>
+        <div class="card gradient-border p-6">
+          <div class="text-3xl font-black text-accent-light mb-2">W205</div>
+          <div class="text-sm text-dark-300">Mercedes C-Class</div>
+          <div class="text-xs text-dark-400 mt-1">2014-2021 Models</div>
+        </div>
+        <div class="card gradient-border p-6">
+          <div class="text-3xl font-black text-accent-light mb-2" id="rateDisplay">50</div>
+          <div class="text-sm text-dark-300">EGP/USD Rate</div>
+          <div class="text-xs text-dark-400 mt-1">Updated pricing formula</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- BRANDS -->
-  <section class="brands-bar">
-    <div class="brand-item">
-      <div class="brand-logo">🇩🇪</div>
-      <span>BMW</span>
-    </div>
-    <div class="brand-item">
-      <div class="brand-logo">⭐</div>
-      <span>Mercedes-Benz</span>
-    </div>
-  </section>
-
-  <!-- FEATURED PARTS -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title text-center ar">قطع غيار مميزة</h2>
-      <p class="section-subtitle text-center">Featured Parts — Popular items available now</p>
-      <div id="featured-parts" class="grid-4"></div>
-    </div>
-  </section>
-
-  <!-- WHY CHOOSE US -->
-  <section class="section" style="background:var(--white)">
-    <div class="container">
-      <h2 class="section-title text-center ar">ليه تشتري مننا؟</h2>
-      <p class="section-subtitle text-center">Why Choose AutoParts Egypt?</p>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🌍</div>
-          <h4 class="ar">قطع مستوردة</h4>
-          <p>Genuine imported parts from original manufacturers worldwide</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🚚</div>
-          <h4 class="ar">توصيل لحد الباب</h4>
-          <p>Door-to-door delivery across Egypt — shipping included in the price</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">✅</div>
-          <h4 class="ar">ضمان على كل قطعة</h4>
-          <p>Full warranty on every part — quality guaranteed or your money back</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💰</div>
-          <h4 class="ar">أسعار منافسة</h4>
-          <p>Competitive EGP pricing — no hidden fees, no surprises</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="navbar-brand" style="color:var(--white)">
-            <div class="logo-icon">🔧</div> Auto<span>Parts</span>
+  <!-- ═══ VEHICLE SELECTOR ═══ -->
+  <section class="py-20 bg-dark-800 border-y border-dark-500">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="glass rounded-2xl p-8">
+        <h2 class="text-xl font-bold mb-6 flex items-center gap-3">
+          <i class="fa-solid fa-car-side text-accent"></i>
+          Select Your Vehicle
+          <span class="font-cairo text-dark-300 text-base font-normal mr-2">| اختار عربيتك</span>
+        </h2>
+        <div class="grid md:grid-cols-4 gap-4">
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-dark-300 mb-2 font-semibold">Brand</label>
+            <select class="w-full bg-dark-700 border border-dark-500 rounded-lg px-4 py-3 text-dark-50 focus:border-accent focus:outline-none transition-colors">
+              <option>Mercedes-Benz</option>
+              <option disabled>BMW (Coming Soon)</option>
+              <option disabled>Audi (Coming Soon)</option>
+            </select>
           </div>
-          <p>قطع غيار أصلية مستوردة للسيارات الألمانية في مصر. توصيل لحد بابك.</p>
-          <p>Genuine imported spare parts for German cars in Egypt.</p>
-        </div>
-        <div>
-          <h4>روابط سريعة</h4>
-          <a href="index.html">الرئيسية / Home</a>
-          <a href="catalog.html?brand=BMW&model=3 Series&year=2020">BMW قطع</a>
-          <a href="catalog.html?brand=Mercedes-Benz&model=C-Class&year=2020">Mercedes قطع</a>
-          <a href="cart.html">السلة / Cart</a>
-        </div>
-        <div>
-          <h4>الماركات</h4>
-          <a href="catalog.html?brand=BMW&model=3 Series&year=2020">BMW 3 Series</a>
-          <a href="catalog.html?brand=BMW&model=X5&year=2020">BMW X5</a>
-          <a href="catalog.html?brand=Mercedes-Benz&model=C-Class&year=2020">Mercedes C-Class</a>
-          <a href="catalog.html?brand=Mercedes-Benz&model=GLE&year=2020">Mercedes GLE</a>
-        </div>
-        <div>
-          <h4>تواصل معانا</h4>
-          <a href="#">📞 01012345678</a>
-          <a href="#">📧 info@autoparts-eg.com</a>
-          <a href="#">📍 القاهرة، مصر</a>
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-dark-300 mb-2 font-semibold">Model</label>
+            <select class="w-full bg-dark-700 border border-dark-500 rounded-lg px-4 py-3 text-dark-50 focus:border-accent focus:outline-none">
+              <option>C-Class (W205)</option>
+              <option disabled>E-Class (W213)</option>
+              <option disabled>S-Class (W222)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-dark-300 mb-2 font-semibold">Year</label>
+            <select class="w-full bg-dark-700 border border-dark-500 rounded-lg px-4 py-3 text-dark-50 focus:border-accent focus:outline-none">
+              <option>2014-2021</option>
+            </select>
+          </div>
+          <div class="flex items-end">
+            <a href="catalog.html" class="btn-primary w-full justify-center py-3">
+              <i class="fa-solid fa-search"></i>
+              Search Parts
+            </a>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 AutoParts Egypt. All rights reserved. جميع الحقوق محفوظة.</p>
+    </div>
+  </section>
+
+  <!-- ═══ CATEGORIES ═══ -->
+  <section id="categories" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 animate-on-scroll">
+        <h2 class="text-3xl font-black mb-3">Part Categories</h2>
+        <p class="text-dark-300 font-cairo text-lg">تصنيفات قطع الغيار</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4" id="categoryGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FEATURED PARTS ═══ -->
+  <section class="py-24 bg-dark-800/50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between mb-12">
+        <div class="animate-on-scroll">
+          <h2 class="text-3xl font-black mb-2">Featured Parts</h2>
+          <p class="text-dark-300">Real OEM data from Mercedes EPC catalog</p>
+        </div>
+        <a href="catalog.html" class="btn-ghost hidden md:flex">
+          View All <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="featuredGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DATA SOURCE ═══ -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="glass rounded-2xl p-10 grid md:grid-cols-2 gap-10 items-center animate-on-scroll">
+        <div>
+          <div class="inline-flex items-center gap-2 text-accent text-sm font-semibold mb-4">
+            <i class="fa-solid fa-database"></i>
+            DATA SOURCE
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Real EPC Catalog Data</h3>
+          <p class="text-dark-300 mb-6 leading-relaxed">
+            Every part number in our system is scraped directly from the official Mercedes-Benz
+            Electronic Parts Catalog (EPC) via nemigaparts.com. Part numbers, descriptions, and
+            base prices are verified against the manufacturer database.
+          </p>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-center gap-3 text-dark-200">
+              <i class="fa-solid fa-check-circle text-green-500 w-5"></i>
+              W205 Variant 205.002 - C 220 CDI/D
+            </div>
+            <div class="flex items-center gap-3 text-dark-200">
+              <i class="fa-solid fa-check-circle text-green-500 w-5"></i>
+              Groups: 82 (Lighting), 83 (Mirrors), 88 (Body)
+            </div>
+            <div class="flex items-center gap-3 text-dark-200">
+              <i class="fa-solid fa-check-circle text-green-500 w-5"></i>
+              Prices converted at EGP = USD x max(50, market_rate)
+            </div>
+            <div class="flex items-center gap-3 text-dark-200">
+              <i class="fa-solid fa-check-circle text-green-500 w-5"></i>
+              Part links to nemigaparts.com for cross-reference
+            </div>
+          </div>
+        </div>
+        <div class="bg-dark-900 rounded-xl p-6 border border-dark-500 font-mono text-sm">
+          <div class="flex items-center gap-2 text-dark-400 mb-4">
+            <i class="fa-solid fa-terminal"></i> scraped_parts.json
+          </div>
+          <pre class="text-dark-200 overflow-x-auto"><code>{
+  "source": "nemigaparts.com/epc",
+  "variant": "205002/c01",
+  "groups": ["82","83","88"],
+  "sample": {
+    "oem": "<span class="text-accent-light">A2058800118</span>",
+    "name": "FRONT FENDER LEFT",
+    "price_usd": <span class="text-green-400">322.78</span>,
+    "price_egp": <span class="text-yellow-400">16,139</span>,
+    "category": "fender"
+  }
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="border-t border-dark-500 py-12 bg-dark-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center">
+              <i class="fa-solid fa-gear text-white text-sm"></i>
+            </div>
+            <span class="font-bold">AutoParts EG</span>
+          </div>
+          <p class="text-dark-400 text-sm leading-relaxed">
+            OEM automotive parts for the Egyptian market. Real catalog data, verified part numbers, competitive pricing.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-sm uppercase tracking-wider text-dark-300 mb-4">Quick Links</h4>
+          <div class="space-y-2 text-sm text-dark-400">
+            <a href="catalog.html" class="block hover:text-dark-50 transition-colors">Full Catalog</a>
+            <a href="cart.html" class="block hover:text-dark-50 transition-colors">Shopping Cart</a>
+            <a href="admin/" class="block hover:text-dark-50 transition-colors">Admin Dashboard</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-sm uppercase tracking-wider text-dark-300 mb-4">Data Source</h4>
+          <p class="text-dark-400 text-sm">
+            Part data scraped from nemigaparts.com EPC.<br>
+            Mercedes-Benz W205 C-Class (2014-2021).<br>
+            <span class="text-dark-300">Mockup for demonstration only.</span>
+          </p>
+        </div>
+      </div>
+      <div class="mt-10 pt-6 border-t border-dark-600 text-center text-xs text-dark-400">
+        AutoParts EG Mockup &mdash; Built with real EPC data
       </div>
     </div>
   </footer>
 
   <script src="js/app.js"></script>
+  <script>
+    // Populate categories grid
+    const catGrid = document.getElementById('categoryGrid');
+    CATEGORIES.forEach((cat, i) => {
+      const count = PARTS.filter(p => p.category === cat.id).length;
+      catGrid.innerHTML += `
+        <a href="catalog.html?cat=${cat.id}" class="card gradient-border p-5 text-center group animate-on-scroll" style="transition-delay:${i * 0.05}s">
+          <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-dark-600 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+            <i class="fa-solid ${cat.icon} text-xl text-dark-200 group-hover:text-accent-light transition-colors"></i>
+          </div>
+          <div class="font-semibold text-sm mb-1">${cat.nameEn}</div>
+          <div class="font-cairo text-xs text-dark-300">${cat.nameAr}</div>
+          <div class="mt-2 text-xs text-dark-400">${count} parts</div>
+        </a>
+      `;
+    });
+
+    // Populate featured parts (show high-value scraped parts)
+    const featured = PARTS.filter(p => p.scraped && p.priceUsd > 100).slice(0, 8);
+    const featGrid = document.getElementById('featuredGrid');
+    featured.forEach((p, i) => {
+      const cat = CATEGORIES.find(c => c.id === p.category);
+      featGrid.innerHTML += `
+        <div class="card overflow-hidden group animate-on-scroll" style="transition-delay:${i * 0.1}s">
+          <div class="part-img-wrap h-48 relative">
+            <div class="flex flex-col items-center justify-center gap-2 relative z-10">
+              <i class="fa-solid ${cat ? cat.icon : 'fa-car'} text-4xl text-dark-400 group-hover:text-accent/40 transition-colors"></i>
+              <span class="oem-badge">${p.oem}</span>
+            </div>
+            ${p.scraped ? '<div class="absolute top-3 right-3 z-10 text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full border border-green-500/30"><i class="fa-solid fa-database mr-1"></i>EPC</div>' : ''}
+          </div>
+          <div class="p-5">
+            <h3 class="font-semibold text-sm mb-1 group-hover:text-accent-light transition-colors">${p.nameEn}</h3>
+            <div class="font-cairo text-xs text-dark-300 mb-3">${p.nameAr}</div>
+            <div class="flex items-end justify-between">
+              <div>
+                <div class="price-main">${fmtEGP(p.priceEgp)}</div>
+                <div class="price-sub">${fmtUSD(p.priceUsd)}</div>
+              </div>
+              <button onclick="addToCart(${p.id})" class="w-10 h-10 rounded-lg bg-accent/10 hover:bg-accent text-accent hover:text-white flex items-center justify-center transition-all">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+
+    initScrollAnimations();
+  </script>
 </body>
 </html>

@@ -1,48 +1,130 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>إدارة الطلبات | AutoParts Admin</title>
+  <title>Orders | AutoParts Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="../css/style.css">
+  <script>tailwind.config={theme:{extend:{colors:{dark:{50:'#e8e8ef',100:'#b0b0c0',200:'#8888a0',300:'#5a5a72',400:'#3a3a4a',500:'#2a2a3a',600:'#1e1e2a',700:'#16161f',800:'#111118',900:'#0a0a0f'},accent:{DEFAULT:'#3b82f6',light:'#60a5fa',dark:'#1d4ed8'}},fontFamily:{sans:['Inter','sans-serif'],cairo:['Cairo','sans-serif']}}}}</script>
 </head>
-<body>
-  <nav class="navbar">
-    <div class="container">
-      <a href="../index.html" class="navbar-brand"><div class="logo-icon">🔧</div>Auto<span>Parts</span> <span style="font-size:13px;color:var(--gray-400);margin-left:8px">ADMIN</span></a>
-      <div class="nav-links"><a href="../index.html">← العودة للمتجر</a></div>
-    </div>
-  </nav>
-
-  <div class="admin-layout">
-    <aside class="admin-sidebar">
-      <nav class="sidebar-nav">
-        <a href="index.html"><span class="nav-icon">📊</span> لوحة التحكم / Dashboard</a>
-        <a href="parts.html"><span class="nav-icon">🔧</span> إدارة القطع / Parts</a>
-        <a href="pricing.html"><span class="nav-icon">💰</span> سعر الصرف / Pricing</a>
-        <a href="orders.html" class="active"><span class="nav-icon">📦</span> الطلبات / Orders</a>
+<body class="bg-dark-900 text-dark-50">
+  <div class="flex min-h-screen">
+    <aside class="w-64 bg-dark-800 border-r border-dark-500 flex-shrink-0 hidden lg:flex flex-col">
+      <div class="p-6 border-b border-dark-500">
+        <a href="../index.html" class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center"><i class="fa-solid fa-gear text-white"></i></div>
+          <div><div class="font-bold text-sm">AutoParts EG</div><div class="text-[10px] text-dark-400 uppercase tracking-wider">Admin Panel</div></div>
+        </a>
+      </div>
+      <nav class="flex-1 p-4 space-y-1">
+        <a href="index.html" class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-dark-300 hover:bg-dark-700 hover:text-dark-50 transition-colors text-sm"><i class="fa-solid fa-chart-line w-5"></i> Dashboard</a>
+        <a href="parts.html" class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-dark-300 hover:bg-dark-700 hover:text-dark-50 transition-colors text-sm"><i class="fa-solid fa-boxes-stacked w-5"></i> Parts</a>
+        <a href="pricing.html" class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-dark-300 hover:bg-dark-700 hover:text-dark-50 transition-colors text-sm"><i class="fa-solid fa-coins w-5"></i> Pricing</a>
+        <a href="orders.html" class="flex items-center gap-3 px-4 py-2.5 rounded-lg bg-accent/10 text-accent-light text-sm font-medium"><i class="fa-solid fa-receipt w-5"></i> Orders</a>
       </nav>
+      <div class="p-4 border-t border-dark-500"><a href="../index.html" class="flex items-center gap-3 px-4 py-2 text-sm text-dark-400 hover:text-dark-200 transition-colors"><i class="fa-solid fa-arrow-left w-5"></i> Back to Store</a></div>
     </aside>
 
-    <main class="admin-content">
-      <h1 class="ar">📦 إدارة الطلبات</h1>
-      <p class="subtitle">Orders Management — Track and update order status</p>
-
-      <div class="admin-table-wrap">
-        <div class="admin-table-header">
-          <h3>كل الطلبات / All Orders</h3>
+    <main class="flex-1 overflow-auto">
+      <header class="h-16 border-b border-dark-500 flex items-center justify-between px-8 bg-dark-800/50">
+        <h1 class="text-lg font-bold">Orders</h1>
+        <div class="flex items-center gap-3">
+          <select class="bg-dark-700 border border-dark-500 rounded-lg px-3 py-2 text-sm text-dark-50 focus:border-accent focus:outline-none">
+            <option>All Statuses</option>
+            <option>Pending</option>
+            <option>Confirmed</option>
+            <option>Shipped</option>
+            <option>Delivered</option>
+          </select>
         </div>
-        <div style="overflow-x:auto">
-          <table class="admin-table">
-            <thead><tr>
-              <th>#</th><th>العميل</th><th>الموبايل</th><th>المدينة</th><th>التاريخ</th><th>القطع</th><th>الإجمالي</th><th>الحالة</th><th>تعديل</th>
-            </tr></thead>
-            <tbody id="orders-tbody"></tbody>
+      </header>
+
+      <div class="p-8">
+        <!-- Stats -->
+        <div class="grid grid-cols-4 gap-4 mb-8">
+          <div class="stat-card">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center"><i class="fa-solid fa-clock text-yellow-400"></i></div>
+              <div><div class="text-xl font-bold text-yellow-400">3</div><div class="text-xs text-dark-400">Pending</div></div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center"><i class="fa-solid fa-check text-blue-400"></i></div>
+              <div><div class="text-xl font-bold text-blue-400">5</div><div class="text-xs text-dark-400">Confirmed</div></div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center"><i class="fa-solid fa-truck text-purple-400"></i></div>
+              <div><div class="text-xl font-bold text-purple-400">2</div><div class="text-xs text-dark-400">Shipped</div></div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center"><i class="fa-solid fa-circle-check text-green-400"></i></div>
+              <div><div class="text-xl font-bold text-green-400">12</div><div class="text-xs text-dark-400">Delivered</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Orders Table -->
+        <div class="card overflow-hidden">
+          <table class="data-table">
+            <thead>
+              <tr><th>Order ID</th><th>Customer</th><th>Items</th><th>Total</th><th>Status</th><th>Date</th><th></th></tr>
+            </thead>
+            <tbody id="ordersTable"></tbody>
           </table>
         </div>
       </div>
     </main>
   </div>
+
   <script src="../js/app.js"></script>
+  <script>
+    const mockOrders = [
+      { id: 'ORD-2026-001', customer: 'Ahmed Hassan', phone: '0100-XXX-XXXX', items: [{oem:'A2058800140', name:'Front Bumper Trim', qty:1}], total: 26462, status:'pending', date:'2026-02-19' },
+      { id: 'ORD-2026-002', customer: 'Mohamed Ali', phone: '0111-XXX-XXXX', items: [{oem:'A2058800118', name:'Front Fender Left', qty:1},{oem:'A2058800218', name:'Front Fender Right', qty:1}], total: 32278, status:'confirmed', date:'2026-02-18' },
+      { id: 'ORD-2026-003', customer: 'Youssef Kamal', phone: '0122-XXX-XXXX', items: [{oem:'A2059067803', name:'Headlamp LED Left', qty:1}], total: 62500, status:'confirmed', date:'2026-02-18' },
+      { id: 'ORD-2026-004', customer: 'Sara Ibrahim', phone: '0155-XXX-XXXX', items: [{oem:'A0074209020', name:'Front Brake Pad Set', qty:2}], total: 9200, status:'shipped', date:'2026-02-17' },
+      { id: 'ORD-2026-005', customer: 'Omar Fathy', phone: '0100-XXX-XXXX', items: [{oem:'A2058880260', name:'Front Grille AMG Diamond', qty:1}], total: 19250, status:'pending', date:'2026-02-17' },
+      { id: 'ORD-2026-006', customer: 'Hana Mostafa', phone: '0112-XXX-XXXX', items: [{oem:'A2058800447', name:'Rear Bumper Trim', qty:1}], total: 28556, status:'delivered', date:'2026-02-16' },
+      { id: 'ORD-2026-007', customer: 'Khaled Nasser', phone: '0128-XXX-XXXX', items: [{oem:'A2057200105', name:'Front Door Left', qty:1},{oem:'A2058107300', name:'Mirror Assembly Left', qty:1}], total: 48250, status:'confirmed', date:'2026-02-16' },
+      { id: 'ORD-2026-008', customer: 'Layla Ahmed', phone: '0155-XXX-XXXX', items: [{oem:'A2055000293', name:'Radiator Assembly', qty:1}], total: 16000, status:'shipped', date:'2026-02-15' },
+      { id: 'ORD-2026-009', customer: 'Tarek Samir', phone: '0100-XXX-XXXX', items: [{oem:'A2057500075', name:'Trunk Lid', qty:1}], total: 37500, status:'delivered', date:'2026-02-15' },
+      { id: 'ORD-2026-010', customer: 'Nour El-Din', phone: '0111-XXX-XXXX', items: [{oem:'A2058800340', name:'Front Bumper AMG', qty:1}], total: 27665, status:'pending', date:'2026-02-14' },
+    ];
+
+    const statusColors = {
+      pending: 'bg-yellow-500/10 text-yellow-400 border-yellow-500/20',
+      confirmed: 'bg-blue-500/10 text-blue-400 border-blue-500/20',
+      shipped: 'bg-purple-500/10 text-purple-400 border-purple-500/20',
+      delivered: 'bg-green-500/10 text-green-400 border-green-500/20'
+    };
+
+    document.getElementById('ordersTable').innerHTML = mockOrders.map(o => `
+      <tr>
+        <td class="font-mono text-sm font-semibold">${o.id}</td>
+        <td>
+          <div class="font-medium text-sm">${o.customer}</div>
+          <div class="text-xs text-dark-400">${o.phone}</div>
+        </td>
+        <td>
+          <div class="space-y-1">
+            ${o.items.map(i => `<div class="text-xs"><span class="oem-badge mr-1">${i.oem}</span>${i.name} x${i.qty}</div>`).join('')}
+          </div>
+        </td>
+        <td class="font-bold">${fmtEGP(o.total)}</td>
+        <td><span class="text-xs px-3 py-1 rounded-full border ${statusColors[o.status]} capitalize">${o.status}</span></td>
+        <td class="text-dark-300 text-sm">${o.date}</td>
+        <td>
+          <button class="text-dark-400 hover:text-dark-50 transition-colors"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        </td>
+      </tr>
+    `).join('');
+  </script>
 </body>
 </html>
