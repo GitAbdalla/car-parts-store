@@ -1,0 +1,4230 @@
+{
+  "scrapeDate": "2026-02-21",
+  "source": "bmwfans.info ETK BMW F30",
+  "variant": "F30/Europe/320i-N20 (320i N20, Europe)",
+  "metadata": {
+    "currency": "EUR",
+    "eurUsdRate": 1.08,
+    "note": "Prices are in EUR (USD prices not available on bmwfans.info). Convert using metadata.eurUsdRate.",
+    "totalParts": 527,
+    "pricesCovered": 428
+  },
+  "parts": [
+    {
+      "oem": "41357298027",
+      "name": "Side panel, front left",
+      "price": 162.91,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "41357298028",
+      "name": "Side panel, front right",
+      "price": 162.91,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "41007438439",
+      "name": "Side panel, front left",
+      "price": 146.8,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "41007438440",
+      "name": "Side panel, front right",
+      "price": 146.8,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "41357298029",
+      "name": "Side panel bracket, front left 1",
+      "price": 5.73,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "41357298030",
+      "name": "Side panel bracket, front right 1",
+      "price": 5.73,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "41358066937",
+      "name": "Side panel bracket, front left 1",
+      "price": 5.96,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "41358066938",
+      "name": "Side panel bracket, front right 1",
+      "price": 5.96,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "41357298037",
+      "name": "Side panel bracket, front left 2",
+      "price": 3.64,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "41357298038",
+      "name": "Side panel bracket, front right 2",
+      "price": 4.61,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "41357298039",
+      "name": "Side panel bracket, front left 3",
+      "price": 5.73,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "41357298040",
+      "name": "Side panel bracket, front right 3",
+      "price": 5.73,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "41358066939",
+      "name": "Side panel bracket, front left 3",
+      "price": 5.96,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "41358066940",
+      "name": "Side panel bracket, front right 3",
+      "price": 5.96,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "07147147513",
+      "name": "Hex bolt with washer",
+      "price": 0.53,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "07147133884",
+      "name": "Body nut",
+      "price": 0.62,
+      "group": "bodywork",
+      "subgroup": "front_side_panel",
+      "category": "fender"
+    },
+    {
+      "oem": "51117292991",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293026",
+      "name": "Trim, bumper, Lines, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293030",
+      "name": "Trim, bumper, Lines, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293022",
+      "name": "Trim, bumper, Lines, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117292995",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117292996",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117292999",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293028",
+      "name": "Trim, bumper, Lines, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293027",
+      "name": "Trim, bumper, Lines, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293013",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293011",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293015",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293016",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293019",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117292994",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117327272",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293087",
+      "name": "Trim, bumper, Lines, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293085",
+      "name": "Trim, bumper, Lines, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293091",
+      "name": "Trim, bumper, Lines, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293093",
+      "name": "Trim, bumper, Lines, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293090",
+      "name": "Trim, bumper, Lines, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293089",
+      "name": "Trim, bumper, Lines, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293088",
+      "name": "Trim, bumper, Lines, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117327277",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293116",
+      "name": "Flap, towing eye, primed",
+      "price": 7.33,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51112240175",
+      "name": "Flap, towing eye, painted",
+      "price": 40.88,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293031",
+      "name": "Cover, spray nozzle, primed left",
+      "price": 12.1,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117293032",
+      "name": "Cover, spray nozzle, primed right",
+      "price": 12.1,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117263478",
+      "name": "Insert, air intake, center",
+      "price": 33.15,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117279703",
+      "name": "Insert, air intake, center",
+      "price": 34.72,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117279704",
+      "name": "Cover for air intake, center",
+      "price": 12.82,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117255361",
+      "name": "Mount, side wall front, upper left",
+      "price": 8.15,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117255362",
+      "name": "Mount, side wall front, upper right",
+      "price": 8.15,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117279711",
+      "name": "Mount, side wall front, lower left",
+      "price": 8.15,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117279712",
+      "name": "Mount, side wall front, lower right",
+      "price": 8.15,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117296331",
+      "name": "Mount for support",
+      "price": 2.7,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117296308",
+      "name": "Support, center",
+      "price": 4.53,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117296329",
+      "name": "Support",
+      "price": 2.08,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117324343",
+      "name": "Set of mounts, front PDC / PMA sensor",
+      "price": 29.83,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07149154112",
+      "name": "Torx-bolt for plastic material",
+      "price": 0.57,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51247065559",
+      "name": "Axial securing clip",
+      "price": 0.18,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51111908077",
+      "name": "Expanding rivet",
+      "price": 0.2,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07119901299",
+      "name": "Hex head screw",
+      "price": 0.21,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51717065773",
+      "name": "C-clip nut",
+      "price": 0.5,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07149110671",
+      "name": "Hex bolt",
+      "price": 0.62,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07149126886",
+      "name": "Hex bolt",
+      "price": 0.51,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07147129160",
+      "name": "Hex head screw with washer",
+      "price": 0.36,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07147154447",
+      "name": "C-clip nut, self-locking",
+      "price": 0.38,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07119904263",
+      "name": "Sheet metal screw with washer",
+      "price": 0.26,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07149166316",
+      "name": "Fillister head screw",
+      "price": 0.82,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07146986939",
+      "name": "Blind rivet nut, flat headed",
+      "price": 1.73,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07149112449",
+      "name": "Torx-bolt with washer",
+      "price": 0.8,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117266197",
+      "name": "Support, fog lamp left",
+      "price": 15.77,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117266198",
+      "name": "Support, fog lamp right",
+      "price": 15.77,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117255393",
+      "name": "Mount, bumper, front, top",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117275178",
+      "name": "Mount, bumper, front, top",
+      "price": 115.58,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117255364",
+      "name": "Shock absorber front",
+      "price": 12.05,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117266190",
+      "name": "Shock absorber front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054185",
+      "name": "Shock absorber front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054186",
+      "name": "Shock absorber front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117266191",
+      "name": "Deformation element, front left",
+      "price": 11.54,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117266192",
+      "name": "Deformation element, front right",
+      "price": 11.54,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117266195",
+      "name": "Deformation element, front left",
+      "price": 38.14,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117266196",
+      "name": "Deformation element, front right",
+      "price": 38.14,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51647266325",
+      "name": "Mount, bumper, front, lower",
+      "price": 27.59,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054188",
+      "name": "Mount, bumper, front, lower",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51647279726",
+      "name": "Mount, bumper, front, lower",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117266193",
+      "name": "Deformation element, front lower left",
+      "price": 7.88,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117266194",
+      "name": "Deformation element, front lower right",
+      "price": 7.88,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118051189",
+      "name": "Deformation element left",
+      "price": 15.31,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118051190",
+      "name": "Deformation element right",
+      "price": 15.31,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117268479",
+      "name": "Damper for curb descent",
+      "price": 1.19,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117302950",
+      "name": "Cover for impact absorber",
+      "price": 4.14,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117286015",
+      "name": "Nut plate, outside",
+      "price": 2.6,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51647245795",
+      "name": "Support front axle support, left",
+      "price": 11.16,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51647245796",
+      "name": "Support for front axle subframe, right",
+      "price": 14.08,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07146978618",
+      "name": "Torx screw with washer",
+      "price": 1.41,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07119906675",
+      "name": "Hex bolt with washer",
+      "price": 1.02,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07119905547",
+      "name": "Hex bolt with washer",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07119907337",
+      "name": "Hex bolt with washer",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07147234212",
+      "name": "Blind rivet",
+      "price": 0.54,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07147321202",
+      "name": "Hex bolt",
+      "price": 2.66,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07119906292",
+      "name": "Hex bolt",
+      "price": 1.73,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51117371572",
+      "name": "Support",
+      "price": 3.48,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07119905949",
+      "name": "Self-locking hex nut",
+      "price": 0.36,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "34509804151",
+      "name": "ASA screw, self-threading",
+      "price": 1.2,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51617311557",
+      "name": "Strut brace",
+      "price": 26.81,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51617378711",
+      "name": "Strut brace",
+      "price": 28.73,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07147270121",
+      "name": "Torx screw with collar",
+      "price": 1.91,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51617326236",
+      "name": "Reinforcement for bulkhead",
+      "price": 12.95,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51617326244",
+      "name": "Brace on partition",
+      "price": 12.95,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51617435132",
+      "name": "Reinforcement on firewall",
+      "price": 20.45,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07147327937",
+      "name": "Fillister head screw",
+      "price": 1.51,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07119908004",
+      "name": "Hex bolt",
+      "price": 0.76,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07119905544",
+      "name": "Hex nut",
+      "price": 0.35,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07119904024",
+      "name": "Hex nut",
+      "price": 0.26,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51617232817",
+      "name": "Strut tower brace, left",
+      "price": 17.46,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51617377777",
+      "name": "Strut tower brace, left",
+      "price": 18.18,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51617232818",
+      "name": "Strut tower brace, right",
+      "price": 17.74,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51617377778",
+      "name": "Strut tower brace, right",
+      "price": 18.18,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118055823",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118055822",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118055819",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118055820",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118055821",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118056559",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118056561",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118056560",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118056562",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118055824",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118055827",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118055826",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118055825",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118055828",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118055829",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118060259",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118055830",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118056564",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118056563",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118060260",
+      "name": "Trim cover, bumper, primered, front",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118056606",
+      "name": "Flap, towing eye, primed",
+      "price": 14.01,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118056613",
+      "name": "Cover, spray nozzle, primed left",
+      "price": 15.84,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118056614",
+      "name": "Cover, spray nozzle, primed right",
+      "price": 15.84,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054132",
+      "name": "Insert, air intake, center",
+      "price": 30.13,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054136",
+      "name": "Insert, air intake, center",
+      "price": 31.77,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118056106",
+      "name": "Holder",
+      "price": 6.35,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "66316777308",
+      "name": "Blind rivet",
+      "price": 0.51,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "41357060601",
+      "name": "Clip nut",
+      "price": 0.57,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118060120",
+      "name": "Repair kit for bracket, bumper, front",
+      "price": 29.1,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07129907535",
+      "name": "Screw",
+      "price": 0.45,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51161881149",
+      "name": "Expanding rivet",
+      "price": 0.16,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07147322722",
+      "name": "Fillister head screw",
+      "price": 1.22,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07149321070",
+      "name": "Fillister head screw",
+      "price": 1.38,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118047458",
+      "name": "Blind rivet",
+      "price": 0.53,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07147406384",
+      "name": "Oval head screw with washer",
+      "price": 1.85,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054155",
+      "name": "Grill, bumper, front, left",
+      "price": 11.73,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054156",
+      "name": "Grill, bumper, front, right",
+      "price": 11.73,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054261",
+      "name": "Trim cover, grill, left",
+      "price": 11.77,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054262",
+      "name": "Trim cover, grill, right",
+      "price": 11.77,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054163",
+      "name": "Support left",
+      "price": 13.54,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054164",
+      "name": "Support right",
+      "price": 13.54,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054157",
+      "name": "Licence plate base",
+      "price": 29.78,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054158",
+      "name": "Licence plate base",
+      "price": 29.78,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07146959925",
+      "name": "Phillips screw f plastic material",
+      "price": 0.39,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07119906254",
+      "name": "Countersunk screw",
+      "price": 0.21,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "07119904208",
+      "name": "Washer",
+      "price": 0.24,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51127020321",
+      "name": "Expanding nut",
+      "price": 0.38,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51187134021",
+      "name": "Adhesive pad",
+      "price": 0.64,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118122522",
+      "name": "Phillips screw f plastic material",
+      "price": 0.35,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054187",
+      "name": "Adapter underhood shield",
+      "price": 15.18,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51118054162",
+      "name": "Licence plate base",
+      "price": 29.78,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_front",
+      "category": "bumper_front"
+    },
+    {
+      "oem": "51127312724",
+      "name": "Bumper trim panel, primered, rear",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51122239981",
+      "name": "Bumper trim panel, painted, rear",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127312733",
+      "name": "Bumper trim panel, primered, rear",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127312730",
+      "name": "Bumper trim panel, primered, rear",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51122239993",
+      "name": "Bumper trim panel, painted, rear",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127312748",
+      "name": "Flap, towing eye, primed",
+      "price": 11.68,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51122240007",
+      "name": "Flap, towing eye, painted",
+      "price": 40.88,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127288233",
+      "name": "Trim strip, black",
+      "price": 37.82,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127289755",
+      "name": "Trim strip, chrome",
+      "price": 62.61,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127289756",
+      "name": "Trim strip, matt aluminum",
+      "price": 52.1,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127312750",
+      "name": "Rear PDC holder set",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127256921",
+      "name": "Reinforcement for bumper, rear lower",
+      "price": 22.44,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127256922",
+      "name": "Guide, center rear",
+      "price": 10.8,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127256923",
+      "name": "Guide for bumper, side, left",
+      "price": 23.3,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127256924",
+      "name": "Guide for bumper, side, right",
+      "price": 23.3,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "63121374075",
+      "name": "Expanding nut",
+      "price": 0.2,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "07147127714",
+      "name": "Fillister head screw",
+      "price": 0.32,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "07147155614",
+      "name": "Hex nut with plate",
+      "price": 0.8,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "07147305178",
+      "name": "Combination nut",
+      "price": 0.53,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "07147146540",
+      "name": "Hex bolt",
+      "price": 0.5,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "52208133466",
+      "name": "Plug, black",
+      "price": 0.34,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127400293",
+      "name": "Left protection foil",
+      "price": 2.79,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127400294",
+      "name": "Right protection foil",
+      "price": 2.79,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "83192317925",
+      "name": "Adhesive set K6",
+      "price": 20.59,
+      "group": "vehicle_trim",
+      "subgroup": "trim_cover_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127256927",
+      "name": "Carrier, bumper rear",
+      "price": 115.55,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127256928",
+      "name": "Carrier, bumper rear",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51127240917",
+      "name": "Washer-gasket",
+      "price": 2.2,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "07147266441",
+      "name": "Hex nut",
+      "price": 1.09,
+      "group": "vehicle_trim",
+      "subgroup": "carrier_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51717284339",
+      "name": "Connecting support",
+      "price": 24.16,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "33326764505",
+      "name": "Torx screw",
+      "price": 0.89,
+      "group": "vehicle_trim",
+      "subgroup": "reinforcement_for_body_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51128056497",
+      "name": "Bumper trim panel, primered, rear",
+      "price": 507.39,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51128056498",
+      "name": "Bumper trim panel, primered, rear",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51128056615",
+      "name": "Flap, towing eye, primed",
+      "price": 14.01,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51128054197",
+      "name": "Insert for bumper, rear",
+      "price": 56.39,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51128059970",
+      "name": "Set of mounts for PDC sensor, rear",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "51128054200",
+      "name": "Reinforcement for bumper, rear lower",
+      "price": 32.7,
+      "group": "vehicle_trim",
+      "subgroup": "m_trim_rear",
+      "category": "bumper_rear"
+    },
+    {
+      "oem": "41007290944",
+      "name": "Hood",
+      "price": 248.57,
+      "group": "bodywork",
+      "subgroup": "engine_hood_mounting_parts",
+      "category": "hood"
+    },
+    {
+      "oem": "41617286343",
+      "name": "Left engine hood hinge",
+      "price": 31.87,
+      "group": "bodywork",
+      "subgroup": "engine_hood_mounting_parts",
+      "category": "hood"
+    },
+    {
+      "oem": "41617286344",
+      "name": "Right engine hood hinge",
+      "price": 31.87,
+      "group": "bodywork",
+      "subgroup": "engine_hood_mounting_parts",
+      "category": "hood"
+    },
+    {
+      "oem": "51237239233",
+      "name": "Gas strut, hood",
+      "price": 38.22,
+      "group": "bodywork",
+      "subgroup": "engine_hood_mounting_parts",
+      "category": "hood"
+    },
+    {
+      "oem": "51767183752",
+      "name": "Adjuster",
+      "price": 2.58,
+      "group": "bodywork",
+      "subgroup": "engine_hood_mounting_parts",
+      "category": "hood"
+    },
+    {
+      "oem": "51237291089",
+      "name": "Stop buffer",
+      "price": 5.64,
+      "group": "bodywork",
+      "subgroup": "engine_hood_mounting_parts",
+      "category": "hood"
+    },
+    {
+      "oem": "07149231837",
+      "name": "Hex bolt with washer",
+      "price": 1.92,
+      "group": "bodywork",
+      "subgroup": "engine_hood_mounting_parts",
+      "category": "hood"
+    },
+    {
+      "oem": "07147139131",
+      "name": "Hex nut with plate",
+      "price": 1.14,
+      "group": "bodywork",
+      "subgroup": "engine_hood_mounting_parts",
+      "category": "hood"
+    },
+    {
+      "oem": "07146959644",
+      "name": "Hex nut with plate",
+      "price": 1.59,
+      "group": "bodywork",
+      "subgroup": "engine_hood_mounting_parts",
+      "category": "hood"
+    },
+    {
+      "oem": "51237242549",
+      "name": "Right lower part of hood lock",
+      "price": 34.99,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "51237242548",
+      "name": "Left lower part of hood lock",
+      "price": 34.99,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "51237247080",
+      "name": "Catch bracket",
+      "price": 9.02,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "51237247079",
+      "name": "Twist protection",
+      "price": 2.31,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "51237239240",
+      "name": "Bowden cable, hood, front",
+      "price": null,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "51237396161",
+      "name": "Bowden cable, hood, front",
+      "price": null,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "51237239239",
+      "name": "Bowden cable, hood, rear",
+      "price": 8.04,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "61137670182",
+      "name": "Clip retainer",
+      "price": 0.62,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "13901720201",
+      "name": "Hose clamp",
+      "price": 2.39,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "51237309606",
+      "name": "Lever f engine hood mechanism",
+      "price": 4.2,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "51237309608",
+      "name": "Lever f engine hood mechanism",
+      "price": 4.43,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "61136912396",
+      "name": "Bracket, plug connection bleu",
+      "price": 2.2,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "07119907285",
+      "name": "Torx-bolt with washer",
+      "price": 0.35,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "17127609160",
+      "name": "Pipe clip",
+      "price": 2.92,
+      "group": "bodywork",
+      "subgroup": "hood_locking_system",
+      "category": "hood"
+    },
+    {
+      "oem": "51767255802",
+      "name": "Front engine hood sealing",
+      "price": 9.49,
+      "group": "bodywork",
+      "subgroup": "hood_seals",
+      "category": "hood"
+    },
+    {
+      "oem": "51767239146",
+      "name": "Rear engine hood sealing",
+      "price": 9.13,
+      "group": "bodywork",
+      "subgroup": "hood_seals",
+      "category": "hood"
+    },
+    {
+      "oem": "51767255803",
+      "name": "Left engine hood sealing",
+      "price": 5.13,
+      "group": "bodywork",
+      "subgroup": "hood_seals",
+      "category": "hood"
+    },
+    {
+      "oem": "51767255804",
+      "name": "Right engine hood sealing",
+      "price": 5.08,
+      "group": "bodywork",
+      "subgroup": "hood_seals",
+      "category": "hood"
+    },
+    {
+      "oem": "51767264273",
+      "name": "Sealing side panel, left",
+      "price": 9.14,
+      "group": "bodywork",
+      "subgroup": "hood_seals",
+      "category": "hood"
+    },
+    {
+      "oem": "51767264274",
+      "name": "Sealing side panel right",
+      "price": 9.14,
+      "group": "bodywork",
+      "subgroup": "hood_seals",
+      "category": "hood"
+    },
+    {
+      "oem": "51118174185",
+      "name": "Expanding rivet",
+      "price": 0.18,
+      "group": "bodywork",
+      "subgroup": "hood_seals",
+      "category": "hood"
+    },
+    {
+      "oem": "51481915964",
+      "name": "Expanding rivet",
+      "price": 0.2,
+      "group": "bodywork",
+      "subgroup": "hood_seals",
+      "category": "hood"
+    },
+    {
+      "oem": "51757241814",
+      "name": "Underhood shield",
+      "price": 68.32,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "51757241772",
+      "name": "Engine comp. shield., underride prot.",
+      "price": 156.17,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "51757241820",
+      "name": "Engine compartment protection backet",
+      "price": 4.89,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "51757309591",
+      "name": "Mount, eng. bay shield, underride guard",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "51757262626",
+      "name": "Support, engine bay shield, rear",
+      "price": 20.85,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "07147306224",
+      "name": "Expanding nut",
+      "price": 0.53,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "07146961201",
+      "name": "Self-locking hex bolt",
+      "price": 0.72,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "07119907898",
+      "name": "Hex bolt",
+      "price": 0.39,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "51717376340",
+      "name": "Rotary clip",
+      "price": 3.85,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "51757163899",
+      "name": "Rotary clip",
+      "price": 1.66,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "07147311614",
+      "name": "Blind rivet nut, flat headed",
+      "price": 0.45,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "51717376341",
+      "name": "Service cover",
+      "price": 17.75,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "51717376342",
+      "name": "Absorber for engine bay insulation",
+      "price": 24.54,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "51717376343",
+      "name": "Clip, upper part",
+      "price": 2.84,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "51717376344",
+      "name": "Clip, bottom part",
+      "price": 2.84,
+      "group": "vehicle_trim",
+      "subgroup": "underhood_shield",
+      "category": "hood"
+    },
+    {
+      "oem": "63117259523",
+      "name": "Headlight left",
+      "price": 240.58,
+      "group": "lighting",
+      "subgroup": "headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117259524",
+      "name": "Headlight right",
+      "price": 287.69,
+      "group": "lighting",
+      "subgroup": "headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117259539",
+      "name": "Headlight left",
+      "price": 287.69,
+      "group": "lighting",
+      "subgroup": "headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117259540",
+      "name": "Headlight right",
+      "price": 287.69,
+      "group": "lighting",
+      "subgroup": "headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117338701",
+      "name": "Bi-xenon headlight AKL, left",
+      "price": 560.22,
+      "group": "lighting",
+      "subgroup": "headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117338702",
+      "name": "Bi-xenon headlight AKL, right",
+      "price": 687.64,
+      "group": "lighting",
+      "subgroup": "headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117338703",
+      "name": "Bi-xenon headlight AKL, left",
+      "price": 687.64,
+      "group": "lighting",
+      "subgroup": "headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117338704",
+      "name": "Bi-xenon headlight AKL, right",
+      "price": 687.64,
+      "group": "lighting",
+      "subgroup": "headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117314531",
+      "name": "Bi-xenon headlight, left",
+      "price": 484.93,
+      "group": "lighting",
+      "subgroup": "headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117314532",
+      "name": "Bi-xenon headlight, right",
+      "price": 484.93,
+      "group": "lighting",
+      "subgroup": "headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117338699",
+      "name": "Bi-xenon headlight, left",
+      "price": 582.76,
+      "group": "lighting",
+      "subgroup": "headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117338700",
+      "name": "Bi-xenon headlight, right",
+      "price": 582.76,
+      "group": "lighting",
+      "subgroup": "headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63112242126",
+      "name": "Set masking foil f headlight",
+      "price": 37.42,
+      "group": "lighting",
+      "subgroup": "headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63217160795",
+      "name": "Longlife bulb",
+      "price": 14.29,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63217160780",
+      "name": "Bulb",
+      "price": 13.45,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63217160781",
+      "name": "Longlife bulb",
+      "price": 20.17,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63217160791",
+      "name": "Bulb yellow",
+      "price": 2.27,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117359245",
+      "name": "Bulb",
+      "price": 19.33,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63212239799",
+      "name": "BMW Performance Light",
+      "price": 38.66,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63212408030",
+      "name": "BMW Performance Light EVO",
+      "price": 39.08,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63127280779",
+      "name": "Alignment element",
+      "price": 3.26,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "51127070202",
+      "name": "Clip nut",
+      "price": 0.64,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "07147288888",
+      "name": "Fillister head screw",
+      "price": 4.09,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117159570",
+      "name": "Bulb socket, turn indicator",
+      "price": 8.08,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117311241",
+      "name": "Cover",
+      "price": 10.3,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117400479",
+      "name": "Bracket headlight left",
+      "price": 23.67,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117400480",
+      "name": "Bracket headlight right",
+      "price": 23.67,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117387835",
+      "name": "Set of screws",
+      "price": 6.36,
+      "group": "lighting",
+      "subgroup": "individual_parts_for_headlamp_halogen",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63217217509",
+      "name": "Bulb Xenon light with ignition element",
+      "price": 163.87,
+      "group": "lighting",
+      "subgroup": "single_parts_xenon_headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117311243",
+      "name": "LED module",
+      "price": 53.37,
+      "group": "lighting",
+      "subgroup": "single_parts_xenon_headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117398766",
+      "name": "Set of LED modules",
+      "price": 60.79,
+      "group": "lighting",
+      "subgroup": "single_parts_xenon_headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63127296090",
+      "name": "Control unit xenon light",
+      "price": 300.49,
+      "group": "lighting",
+      "subgroup": "single_parts_xenon_headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117316143",
+      "name": "Driver module for headlight",
+      "price": 250.74,
+      "group": "lighting",
+      "subgroup": "single_parts_xenon_headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117316147",
+      "name": "Driver module for headlight",
+      "price": 264.43,
+      "group": "lighting",
+      "subgroup": "single_parts_xenon_headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117316142",
+      "name": "Driver module for headlight",
+      "price": null,
+      "group": "lighting",
+      "subgroup": "single_parts_xenon_headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63117316186",
+      "name": "Driver module for headlight",
+      "price": 264.43,
+      "group": "lighting",
+      "subgroup": "single_parts_xenon_headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "71237248266",
+      "name": "Stick-on label xenon-light",
+      "price": 7.75,
+      "group": "lighting",
+      "subgroup": "single_parts_xenon_headlight",
+      "category": "headlamp"
+    },
+    {
+      "oem": "63217312845",
+      "name": "Rear light in the side panel, left",
+      "price": 161.36,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217312846",
+      "name": "Rear light in the side panel, right",
+      "price": 161.36,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217313043",
+      "name": "Bulb socket, rear light side panel, left",
+      "price": 17.2,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217313044",
+      "name": "Bulb socket, rear light side panel, right",
+      "price": 17.2,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217313055",
+      "name": "Rear light in trunk lid, left",
+      "price": 82.23,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217372793",
+      "name": "Rear light in trunk lid, left",
+      "price": 100.8,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217313056",
+      "name": "Rear light in trunk lid, right",
+      "price": 82.23,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217372794",
+      "name": "Rear light in trunk lid, right",
+      "price": 100.8,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217313059",
+      "name": "Bulb socket, rear light in trunk lid, left",
+      "price": 12.93,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217313060",
+      "name": "Bulb socket, rear light in trunk lid, rght",
+      "price": 12.93,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217313057",
+      "name": "Trim, drip rail, left",
+      "price": 19.46,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217313058",
+      "name": "Trim, drip rail, right",
+      "price": 19.46,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217313419",
+      "name": "Left clamp",
+      "price": 4.81,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217313420",
+      "name": "Right clamp",
+      "price": 4.92,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217160789",
+      "name": "Bulb",
+      "price": 2.27,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217160788",
+      "name": "Longlife bulb",
+      "price": 14.29,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "64509123157",
+      "name": "Self-locking hex nut",
+      "price": 0.5,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "07147306640",
+      "name": "Snap-lock coupling",
+      "price": 1.42,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "54347166771",
+      "name": "Rubber buffer",
+      "price": 0.57,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63217313041",
+      "name": "Seal, rear light, side panel",
+      "price": 9.97,
+      "group": "lighting",
+      "subgroup": "rear_light",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63257259877",
+      "name": "Third stoplamp",
+      "price": null,
+      "group": "lighting",
+      "subgroup": "third_stoplamp",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63257259855",
+      "name": "Third stoplamp",
+      "price": null,
+      "group": "lighting",
+      "subgroup": "third_stoplamp",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63257259856",
+      "name": "Third stoplamp",
+      "price": 66.94,
+      "group": "lighting",
+      "subgroup": "third_stoplamp",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63257259883",
+      "name": "Third stoplamp",
+      "price": null,
+      "group": "lighting",
+      "subgroup": "third_stoplamp",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63257259881",
+      "name": "Third stoplamp",
+      "price": null,
+      "group": "lighting",
+      "subgroup": "third_stoplamp",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63257259882",
+      "name": "Third stoplamp",
+      "price": 66.94,
+      "group": "lighting",
+      "subgroup": "third_stoplamp",
+      "category": "tail_light"
+    },
+    {
+      "oem": "63257312498",
+      "name": "Mounting kit clips",
+      "price": 7.15,
+      "group": "lighting",
+      "subgroup": "third_stoplamp",
+      "category": "tail_light"
+    },
+    {
+      "oem": "51137255411",
+      "name": "Grille, front, left",
+      "price": 20.11,
+      "group": "vehicle_trim",
+      "subgroup": "exterior_trim_grill",
+      "category": "grille"
+    },
+    {
+      "oem": "51137255412",
+      "name": "Grille, front, right",
+      "price": 25.44,
+      "group": "vehicle_trim",
+      "subgroup": "exterior_trim_grill",
+      "category": "grille"
+    },
+    {
+      "oem": "51137263479",
+      "name": "Grille, front, left",
+      "price": 46.69,
+      "group": "vehicle_trim",
+      "subgroup": "exterior_trim_grill",
+      "category": "grille"
+    },
+    {
+      "oem": "51137263480",
+      "name": "Grille, front, right",
+      "price": 46.69,
+      "group": "vehicle_trim",
+      "subgroup": "exterior_trim_grill",
+      "category": "grille"
+    },
+    {
+      "oem": "51137263481",
+      "name": "Grille, front, left",
+      "price": 46.69,
+      "group": "vehicle_trim",
+      "subgroup": "exterior_trim_grill",
+      "category": "grille"
+    },
+    {
+      "oem": "51137263482",
+      "name": "Grille, front, right",
+      "price": 46.69,
+      "group": "vehicle_trim",
+      "subgroup": "exterior_trim_grill",
+      "category": "grille"
+    },
+    {
+      "oem": "51137260497",
+      "name": "Grille, front, left",
+      "price": 46.69,
+      "group": "vehicle_trim",
+      "subgroup": "exterior_trim_grill",
+      "category": "grille"
+    },
+    {
+      "oem": "51137260498",
+      "name": "Grille, front, right",
+      "price": 46.69,
+      "group": "vehicle_trim",
+      "subgroup": "exterior_trim_grill",
+      "category": "grille"
+    },
+    {
+      "oem": "51137312617",
+      "name": "Roof molding prime-coated left",
+      "price": 64.21,
+      "group": "vehicle_trim",
+      "subgroup": "exterior_trim_grill",
+      "category": "grille"
+    },
+    {
+      "oem": "51137312618",
+      "name": "Roof molding prime-coated right",
+      "price": 64.21,
+      "group": "vehicle_trim",
+      "subgroup": "exterior_trim_grill",
+      "category": "grille"
+    },
+    {
+      "oem": "51132239971",
+      "name": "Roof molding painted left",
+      "price": 109.66,
+      "group": "vehicle_trim",
+      "subgroup": "exterior_trim_grill",
+      "category": "grille"
+    },
+    {
+      "oem": "51132239973",
+      "name": "Roof molding painted right",
+      "price": 130.88,
+      "group": "vehicle_trim",
+      "subgroup": "exterior_trim_grill",
+      "category": "grille"
+    },
+    {
+      "oem": "51137291271",
+      "name": "Clip",
+      "price": 0.39,
+      "group": "vehicle_trim",
+      "subgroup": "exterior_trim_grill",
+      "category": "grille"
+    },
+    {
+      "oem": "51167245183",
+      "name": "Heated outside mirror, left",
+      "price": 489.04,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245184",
+      "name": "Heated outside mirror, right",
+      "price": 489.04,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245185",
+      "name": "Heated outside mirror, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245186",
+      "name": "Heated outside mirror, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345701",
+      "name": "Heated outside mirror, left",
+      "price": 489.04,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345702",
+      "name": "Heated outside mirror, right",
+      "price": 489.04,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345703",
+      "name": "Heated outside mirror, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345704",
+      "name": "Heated outside mirror, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245167",
+      "name": "Heated outside mirror, left",
+      "price": 470.34,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245168",
+      "name": "Heated outside mirror, right",
+      "price": 470.34,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245169",
+      "name": "Heated outside mirror, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245170",
+      "name": "Heated outside mirror, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345691",
+      "name": "Heated outside mirror, left",
+      "price": 470.34,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345692",
+      "name": "Heated outside mirror, right",
+      "price": 470.34,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345693",
+      "name": "Heated outside mirror, left",
+      "price": 470.34,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345694",
+      "name": "Heated outside mirror, right",
+      "price": 470.34,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245151",
+      "name": "Heated outside mirror, left",
+      "price": 377.74,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245152",
+      "name": "Heated outside mirror, right",
+      "price": 377.74,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245153",
+      "name": "Heated outside mirror, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245154",
+      "name": "Heated outside mirror, right",
+      "price": 377.74,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345681",
+      "name": "Heated outside mirror, left",
+      "price": 377.74,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345682",
+      "name": "Heated outside mirror, right",
+      "price": 377.74,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345683",
+      "name": "Heated outside mirror, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345684",
+      "name": "Heated outside mirror, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245135",
+      "name": "Heated outside mirror, left",
+      "price": 359.03,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245136",
+      "name": "Heated outside mirror, right",
+      "price": 359.03,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245137",
+      "name": "Heated outside mirror, left",
+      "price": 359.03,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245138",
+      "name": "Heated outside mirror, right",
+      "price": 359.03,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345673",
+      "name": "Heated outside mirror, left",
+      "price": 359.03,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345674",
+      "name": "Heated outside mirror, right",
+      "price": 359.03,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345675",
+      "name": "Heated outside mirror, left",
+      "price": 359.03,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345676",
+      "name": "Heated outside mirror, right",
+      "price": 359.03,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245107",
+      "name": "Heated outside mirror, left",
+      "price": 321.61,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245108",
+      "name": "Heated outside mirror, right",
+      "price": 321.61,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245109",
+      "name": "Heated outside mirror, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245110",
+      "name": "Heated outside mirror, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345661",
+      "name": "Heated outside mirror, left",
+      "price": 321.61,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345662",
+      "name": "Heated outside mirror, right",
+      "price": 321.61,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345663",
+      "name": "Heated outside mirror, left",
+      "price": 321.61,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345664",
+      "name": "Heated outside mirror, right",
+      "price": 321.61,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245091",
+      "name": "Heated outside mirror, left",
+      "price": 209.35,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245092",
+      "name": "Heated outside mirror, right",
+      "price": 209.35,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245093",
+      "name": "Heated outside mirror, left",
+      "price": 209.35,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245094",
+      "name": "Heated outside mirror, right",
+      "price": 209.35,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345653",
+      "name": "Heated outside mirror, left",
+      "price": 209.35,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345654",
+      "name": "Heated outside mirror, right",
+      "price": 209.35,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345655",
+      "name": "Heated outside mirror, left",
+      "price": 209.35,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345656",
+      "name": "Heated outside mirror, right",
+      "price": 209.35,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167292745",
+      "name": "Outside mirror cover cap, left, primed",
+      "price": 38.69,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167292746",
+      "name": "Outside mirror cover cap, right, primed",
+      "price": 38.69,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51162222543",
+      "name": "Outside mirror covering cap, painted left",
+      "price": 102.58,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51162222544",
+      "name": "Outside mirror covering cap, painted rig.",
+      "price": 102.58,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284123",
+      "name": "Holder, black grained, left",
+      "price": 20.42,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284124",
+      "name": "Holder, black grained, right",
+      "price": 20.42,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167302409",
+      "name": "Supporting ring, black, left",
+      "price": 20.42,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167302410",
+      "name": "Supporting ring, black, right",
+      "price": 20.42,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284127",
+      "name": "Housing lower section, grained, left",
+      "price": 8.57,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284128",
+      "name": "Housing lower section, grained, right",
+      "price": 8.57,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284131",
+      "name": "Housing lower section, grained, left",
+      "price": 15.41,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284132",
+      "name": "Housing lower section, grained, right",
+      "price": 15.41,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284118",
+      "name": "Set of covers mirror baseplate",
+      "price": 10.52,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "63137280771",
+      "name": "Auxiliary turn signal, mirror, left",
+      "price": 22.6,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "63137280772",
+      "name": "Auxiliary turn signal, mirror, right",
+      "price": 22.6,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284135",
+      "name": "Set of screws",
+      "price": 5.4,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "07149231823",
+      "name": "Torx screw, self-threading",
+      "price": 1.27,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "67137266659",
+      "name": "Power, outside mirror, LIN bus",
+      "price": 147.88,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "67137292347",
+      "name": "Drive, outside mirror left",
+      "price": 70.43,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "67137292348",
+      "name": "Drive, outside mirror right",
+      "price": 70.43,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245307",
+      "name": "Heated outside mirror, left",
+      "price": 524.58,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245308",
+      "name": "Heated outside mirror, right",
+      "price": 524.58,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245309",
+      "name": "Heated outside mirror, left",
+      "price": 524.58,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245310",
+      "name": "Heated outside mirror, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345705",
+      "name": "Heated outside mirror, left",
+      "price": 524.58,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345706",
+      "name": "Heated outside mirror, right",
+      "price": 524.58,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345707",
+      "name": "Heated outside mirror, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345708",
+      "name": "Heated outside mirror, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245275",
+      "name": "Heated outside mirror, left",
+      "price": 413.28,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245276",
+      "name": "Heated outside mirror, right",
+      "price": 413.28,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245277",
+      "name": "Heated outside mirror, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245278",
+      "name": "Heated outside mirror, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345685",
+      "name": "Heated outside mirror, left",
+      "price": 413.28,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345686",
+      "name": "Heated outside mirror, right",
+      "price": 413.28,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345687",
+      "name": "Heated outside mirror, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345688",
+      "name": "Heated outside mirror, right",
+      "price": 413.28,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245291",
+      "name": "Heated outside mirror, left",
+      "price": 504.01,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245292",
+      "name": "Heated outside mirror, right",
+      "price": 504.01,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245293",
+      "name": "Heated outside mirror, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245294",
+      "name": "Heated outside mirror, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345695",
+      "name": "Heated outside mirror, left",
+      "price": 504.01,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345696",
+      "name": "Heated outside mirror, right",
+      "price": 504.01,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345697",
+      "name": "Heated outside mirror, left",
+      "price": 504.01,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345698",
+      "name": "Heated outside mirror, right",
+      "price": 504.01,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245259",
+      "name": "Heated outside mirror, left",
+      "price": 392.7,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245260",
+      "name": "Heated outside mirror, right",
+      "price": 392.7,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245261",
+      "name": "Heated outside mirror, left",
+      "price": 392.7,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245262",
+      "name": "Heated outside mirror, right",
+      "price": 392.7,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345679",
+      "name": "Heated outside mirror, left",
+      "price": 392.7,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345680",
+      "name": "Heated outside mirror, right",
+      "price": 392.7,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245215",
+      "name": "Heated outside mirror, left",
+      "price": 228.05,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245216",
+      "name": "Heated outside mirror, right",
+      "price": 228.05,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245217",
+      "name": "Heated outside mirror, left",
+      "price": 228.05,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245218",
+      "name": "Heated outside mirror, right",
+      "price": 228.05,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345657",
+      "name": "Heated outside mirror, left",
+      "price": 228.05,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345658",
+      "name": "Heated outside mirror, right",
+      "price": 228.05,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345659",
+      "name": "Heated outside mirror, left",
+      "price": 228.05,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345660",
+      "name": "Heated outside mirror, right",
+      "price": 228.05,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245227",
+      "name": "Heated outside mirror, left",
+      "price": 351.55,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245228",
+      "name": "Heated outside mirror, right",
+      "price": 351.55,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245229",
+      "name": "Heated outside mirror, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167245230",
+      "name": "Heated outside mirror, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345665",
+      "name": "Heated outside mirror, left",
+      "price": 351.55,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345666",
+      "name": "Heated outside mirror, right",
+      "price": 351.55,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345667",
+      "name": "Heated outside mirror, left",
+      "price": 351.55,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345668",
+      "name": "Heated outside mirror, right",
+      "price": 351.55,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345677",
+      "name": "Heated outside mirror, left",
+      "price": 392.7,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167345678",
+      "name": "Heated outside mirror, right",
+      "price": 392.7,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284125",
+      "name": "Supporting ring, bright-black left",
+      "price": 28.23,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284126",
+      "name": "Supporting ring, bright-black right",
+      "price": 28.23,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167302411",
+      "name": "Supporting ring, bright-black left",
+      "price": 31.05,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167302412",
+      "name": "Supporting ring, bright-black right",
+      "price": 31.05,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284129",
+      "name": "Housing lower section, left",
+      "price": 18.62,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284130",
+      "name": "Housing lower section, right",
+      "price": 18.62,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284133",
+      "name": "Housing lower section, left",
+      "price": 18.62,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284134",
+      "name": "Housing lower section, right",
+      "price": 18.62,
+      "group": "vehicle_trim",
+      "subgroup": "outside_mirror_2",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167284999",
+      "name": "Mirror glas, heated, wide-angle, left",
+      "price": 88.47,
+      "group": "vehicle_trim",
+      "subgroup": "mirror_glass",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167285001",
+      "name": "Mirror glas heated convex left",
+      "price": 80.44,
+      "group": "vehicle_trim",
+      "subgroup": "mirror_glass",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167285000",
+      "name": "Mirror glas heated convex right",
+      "price": 80.44,
+      "group": "vehicle_trim",
+      "subgroup": "mirror_glass",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51167285002",
+      "name": "Mirror glas, heated, wide-angle, right",
+      "price": 88.47,
+      "group": "vehicle_trim",
+      "subgroup": "mirror_glass",
+      "category": "side_mirror"
+    },
+    {
+      "oem": "51217202144",
+      "name": "System latch, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217229458",
+      "name": "System latch, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217229457",
+      "name": "System latch, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217202145",
+      "name": "System latch, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217202146",
+      "name": "System latch, right",
+      "price": 106.6,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217229461",
+      "name": "System latch, left",
+      "price": 130.52,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217229462",
+      "name": "System latch, right",
+      "price": 130.52,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217202143",
+      "name": "System latch, left",
+      "price": 24.24,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217229455",
+      "name": "System latch, left",
+      "price": 102.45,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217229456",
+      "name": "System latch, right",
+      "price": 102.45,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217242567",
+      "name": "Carrier, outside door handle, front left",
+      "price": 28.56,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217242568",
+      "name": "Carrier, outside door handle, front right",
+      "price": 33.77,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217259830",
+      "name": "Carrier, outside door handle, front right",
+      "price": 48.92,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217326917",
+      "name": "Grab handle, paint finish, left",
+      "price": 161.37,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217326918",
+      "name": "Grab handle, paint finish, right",
+      "price": 161.37,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217207561",
+      "name": "Handle bracket, left prime-coated",
+      "price": 15.5,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217207562",
+      "name": "Handle bracket, right prime-coated",
+      "price": 15.5,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51210445184",
+      "name": "Grab handle, paint finish, right",
+      "price": 129.11,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51210445185",
+      "name": "Grab handle, paint finish, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217326919",
+      "name": "Grab handle, paint finish, left",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217326920",
+      "name": "Grab handle, paint finish, right",
+      "price": 161.37,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217162433",
+      "name": "Covering door, primed left",
+      "price": 12.93,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217162434",
+      "name": "Covering door, primed right",
+      "price": 12.93,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217162439",
+      "name": "Cover, lock cylinder primed, left",
+      "price": 12.93,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217162440",
+      "name": "Cover, lock cylinder primed, right",
+      "price": 12.93,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51210399171",
+      "name": "Cover, lock cylinder painted, left",
+      "price": 38.75,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51210399172",
+      "name": "Cover, lock cylinder painted, right",
+      "price": 38.75,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51210399181",
+      "name": "Cover left painted",
+      "price": 38.75,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51210399182",
+      "name": "Cover right painted",
+      "price": 38.75,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217162431",
+      "name": "Covering door, primed left",
+      "price": 12.93,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217162432",
+      "name": "Covering door, primed right",
+      "price": 12.93,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217162437",
+      "name": "Cover, lock cylinder primed, left",
+      "price": 12.93,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217162438",
+      "name": "Cover, lock cylinder primed, right",
+      "price": 12.93,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51210399167",
+      "name": "Cover, lock cylinder painted, left",
+      "price": 38.75,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51210399168",
+      "name": "Cover, lock cylinder painted, right",
+      "price": 38.75,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51210399177",
+      "name": "Cover left painted",
+      "price": 38.75,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51210399178",
+      "name": "Cover right painted",
+      "price": 38.75,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217233660",
+      "name": "Cover, lock cylinder primed, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217233663",
+      "name": "Covering door, primed left",
+      "price": 12.93,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217259827",
+      "name": "Bowden cable, inside door opener front",
+      "price": 9.24,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217259828",
+      "name": "Bowd.cable, outside door handle front",
+      "price": 18.71,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217310731",
+      "name": "Lock cylinder according to code, left",
+      "price": 60,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217310732",
+      "name": "Lock cylinder according to code, right",
+      "price": 83.4,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217310733",
+      "name": "Lock cylinder with key, left",
+      "price": 70.89,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217310734",
+      "name": "Lock cylinder with key, right",
+      "price": 70.89,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217312271",
+      "name": "Lock cylinder according to code, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217312272",
+      "name": "Lock cylinder with key, right",
+      "price": null,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217270005",
+      "name": "Operating rod, door front left",
+      "price": 7.78,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217270006",
+      "name": "Operating rod, door front right",
+      "price": 7.78,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217321639",
+      "name": "Noise insulation for door, left",
+      "price": 4.49,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217321640",
+      "name": "Noise insulation for door, right",
+      "price": 5.39,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217060667",
+      "name": "Lock cylinder base left",
+      "price": 2.8,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217060668",
+      "name": "Lock cylinder base right",
+      "price": 2.8,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217060293",
+      "name": "Handle bracket base, left",
+      "price": 2.8,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217060294",
+      "name": "Handle bracket base, right",
+      "price": 2.8,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217312545",
+      "name": "Catch bracket",
+      "price": 8.9,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217133972",
+      "name": "Inner hex bolt",
+      "price": 1.49,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217130110",
+      "name": "Torx-countersunk head screw",
+      "price": 1.24,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "07147186859",
+      "name": "Torx bolt",
+      "price": 0.5,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51221817032",
+      "name": "Circlip",
+      "price": 1.51,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "07147140850",
+      "name": "Blind plug",
+      "price": 0.42,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217185561",
+      "name": "Covering left",
+      "price": 3.92,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51217185562",
+      "name": "Covering right",
+      "price": 7.13,
+      "group": "vehicle_trim",
+      "subgroup": "locking_system_door_front",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51227229459",
+      "name": "System latch, left",
+      "price": 90.61,
+      "group": "vehicle_trim",
+      "subgroup": "closing_system_door_rear",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51227229460",
+      "name": "System latch, right",
+      "price": 90.61,
+      "group": "vehicle_trim",
+      "subgroup": "closing_system_door_rear",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51227202147",
+      "name": "System latch, left",
+      "price": 90.61,
+      "group": "vehicle_trim",
+      "subgroup": "closing_system_door_rear",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51227202148",
+      "name": "System latch, right",
+      "price": 90.61,
+      "group": "vehicle_trim",
+      "subgroup": "closing_system_door_rear",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51227259837",
+      "name": "Bowden cable, door opener, inside rear",
+      "price": 8.5,
+      "group": "vehicle_trim",
+      "subgroup": "closing_system_door_rear",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51227259836",
+      "name": "Bowden cable, outside door handle, rear",
+      "price": 18.71,
+      "group": "vehicle_trim",
+      "subgroup": "closing_system_door_rear",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51227270003",
+      "name": "Operating rod, door rear left",
+      "price": 7.78,
+      "group": "vehicle_trim",
+      "subgroup": "closing_system_door_rear",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51227270004",
+      "name": "Operating rod, door rear right",
+      "price": 7.78,
+      "group": "vehicle_trim",
+      "subgroup": "closing_system_door_rear",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51227332267",
+      "name": "Noise insulation for door, left",
+      "price": 6.58,
+      "group": "vehicle_trim",
+      "subgroup": "closing_system_door_rear",
+      "category": "door_handle"
+    },
+    {
+      "oem": "51227332268",
+      "name": "Noise insulation for door, right",
+      "price": 7.18,
+      "group": "vehicle_trim",
+      "subgroup": "closing_system_door_rear",
+      "category": "door_handle"
+    }
+  ]
+}
