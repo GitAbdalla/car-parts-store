@@ -1,6 +1,11 @@
+'use client'
+
 import Link from 'next/link'
+import { useLang } from '@/providers/LangProvider'
 
 export default function Footer() {
+  const { t } = useLang()
+
   return (
     <footer
       className="border-t py-12"
@@ -10,41 +15,41 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <h3 className="font-cairo text-xl font-bold mb-4" style={{ color: '#c9a96e' }}>
+            <h3 className="font-inter font-black text-xl mb-4" style={{ color: '#c9a96e' }}>
               AutoParts EG
             </h3>
             <p className="font-cairo text-sm leading-relaxed" style={{ color: '#9a9a9e' }}>
-              متجر متخصص في قطع غيار مرسيدس بنز الاصلية في مصر. ارقام OEM حقيقية واسعار منافسة.
+              {t.footer.desc}
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="font-cairo font-bold mb-4 text-white">روابط سريعة</h4>
+            <h4 className="font-cairo font-bold mb-4 text-white">{t.footer.quickLinks}</h4>
             <div className="flex flex-col gap-2">
               <Link href="/catalog" className="font-cairo text-sm transition-colors hover:text-gold" style={{ color: '#9a9a9e' }}>
-                الكتالوج
+                {t.footer.catalog}
               </Link>
               <Link href="/cart" className="font-cairo text-sm transition-colors hover:text-gold" style={{ color: '#9a9a9e' }}>
-                السلة
+                {t.footer.cart}
               </Link>
             </div>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-cairo font-bold mb-4 text-white">تواصل معنا</h4>
+            <h4 className="font-cairo font-bold mb-4 text-white">{t.footer.contact}</h4>
             <div className="flex flex-col gap-2 font-cairo text-sm" style={{ color: '#9a9a9e' }}>
               <span>
-                <i className="fa-solid fa-phone ml-2" style={{ color: '#c9a96e' }} />
+                <i className="fa-solid fa-phone ms-2" style={{ color: '#c9a96e' }} />
                 01234567890
               </span>
               <span>
-                <i className="fa-brands fa-whatsapp ml-2" style={{ color: '#c9a96e' }} />
+                <i className="fa-brands fa-whatsapp ms-2" style={{ color: '#c9a96e' }} />
                 01234567890
               </span>
               <span>
-                <i className="fa-solid fa-envelope ml-2" style={{ color: '#c9a96e' }} />
+                <i className="fa-solid fa-envelope ms-2" style={{ color: '#c9a96e' }} />
                 info@autoparts-eg.com
               </span>
             </div>

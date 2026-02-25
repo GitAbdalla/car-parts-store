@@ -3,10 +3,13 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { store } from '@/lib/store'
+import { useLang } from '@/providers/LangProvider'
 import type { VehicleBrand, VehicleModel } from '@mantaray-digital/plugin-automotive'
 
 export default function CarSelector() {
   const router = useRouter()
+  const { lang } = useLang()
+  const ar = lang === 'ar'
   const [brands, setBrands]   = useState<VehicleBrand[]>([])
   const [models, setModels]   = useState<VehicleModel[]>([])
   const [years, setYears]     = useState<number[]>([])
@@ -50,7 +53,7 @@ export default function CarSelector() {
     router.push(`/catalog?${params.toString()}`)
   }
 
-  const selectClass = 'input-dark font-cairo text-lg'
+  const selectClass = 'input-dark font-cairo text-lg cursor-pointer'
 
   return (
     <div>
@@ -62,9 +65,9 @@ export default function CarSelector() {
           onChange={(e) => handleBrand(e.target.value)}
           disabled={loading}
         >
-          <option value="">الماركة</option>
+          <option value="">{loading ? (ar ? 'جاري التحميل...' : 'Loading...') : (ar ? 'الماركة' : 'Make')}</option>
           {brands.map((b) => (
-            <option key={b._id} value={b._id}>{b.nameAr}</option>
+            <option key={b._id} value={b._id}>{ar ? b.nameAr : b.nameEn}</option>
           ))}
         </select>
 
@@ -75,9 +78,9 @@ export default function CarSelector() {
           onChange={(e) => handleModel(e.target.value)}
           disabled={!brand}
         >
-          <option value="">الموديل</option>
+          <option value="">{ar ? 'الموديل' : 'Model'}</option>
           {models.map((m) => (
-            <option key={m._id} value={m._id}>{m.nameAr}</option>
+            <option key={m._id} value={m._id}>{ar ? (m as any).nameAr ?? m.nameEn : m.nameEn}</option>
           ))}
         </select>
 
@@ -88,7 +91,7 @@ export default function CarSelector() {
           onChange={(e) => setYear(Number(e.target.value))}
           disabled={!model}
         >
-          <option value="">السنة</option>
+          <option value="">{ar ? 'السنة' : 'Year'}</option>
           {years.map((y) => (
             <option key={y} value={y}>{y}</option>
           ))}
@@ -102,7 +105,7 @@ export default function CarSelector() {
           className="btn-gold px-10 py-3"
         >
           <i className="fa-solid fa-search" />
-          عرض القطع
+          {ar ? 'عرض القطع' : 'Find Parts'}
         </button>
       </div>
     </div>

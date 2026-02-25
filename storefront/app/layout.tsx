@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import { StoreProvider } from '@/providers/StoreProvider'
+import { LangProvider } from '@/providers/LangProvider'
 
 export const metadata: Metadata = {
   title: 'AutoParts EG — قطع غيار اصلية',
@@ -25,12 +26,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
       </head>
-      <body>
-        <StoreProvider>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </StoreProvider>
+      <body suppressHydrationWarning>
+        <LangProvider>
+          <StoreProvider>
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </StoreProvider>
+        </LangProvider>
         <Toaster
           position="bottom-right"
           toastOptions={{

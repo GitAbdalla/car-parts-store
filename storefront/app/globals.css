@@ -21,6 +21,9 @@
 /* ── Base ──────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
 
+button, [role="button"], a, select, label { cursor: pointer !important; }
+button:disabled, [disabled] { cursor: not-allowed !important; }
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -117,6 +120,7 @@ body {
   transition: border-color 0.3s ease;
   outline: none;
   width: 100%;
+  cursor: pointer;
 }
 .input-dark:focus { border-color: #c9a96e; }
 .input-dark::placeholder { color: #9a9a9e; }
