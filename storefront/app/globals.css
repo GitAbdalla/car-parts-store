@@ -125,6 +125,10 @@ body {
 .input-dark:focus { border-color: #c9a96e; }
 .input-dark::placeholder { color: #9a9a9e; }
 .input-dark option { background: #2a2a2e; }
+/* Icon-padded inputs — defined after .input-dark to win over shorthand padding */
+.input-icon-l { padding-left:         2.5rem; }  /* physical left  — for dir=ltr inputs */
+.input-icon-r { padding-right:        2.5rem; }  /* physical right — for dir=ltr inputs */
+.input-icon-s { padding-inline-start: 2.5rem; }  /* logical start  — follows document dir */
 
 /* Price */
 .price-gold {

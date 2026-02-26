@@ -103,7 +103,7 @@ export default function LoginPage() {
             <div className="relative">
               <input
                 type="email"
-                className="input-dark w-full ps-10"
+                className="input-dark w-full input-icon-l"
                 style={errors.email ? { borderColor: '#ef4444' } : {}}
                 placeholder="you@example.com"
                 dir="ltr"
@@ -112,7 +112,7 @@ export default function LoginPage() {
                 autoComplete="email"
               />
               <i
-                className="fa-solid fa-envelope absolute top-1/2 -translate-y-1/2 start-3 text-sm pointer-events-none"
+                className="fa-solid fa-envelope absolute top-1/2 -translate-y-1/2 left-3 text-sm pointer-events-none"
                 style={{ color: errors.email ? '#ef4444' : '#9a9a9e' }}
               />
             </div>
@@ -125,7 +125,7 @@ export default function LoginPage() {
             <div className="relative">
               <input
                 type={showPass ? 'text' : 'password'}
-                className="input-dark w-full ps-10"
+                className="input-dark w-full input-icon-l"
                 style={errors.password ? { borderColor: '#ef4444' } : {}}
                 placeholder="••••••••"
                 dir="ltr"
@@ -136,7 +136,7 @@ export default function LoginPage() {
               <button
                 type="button"
                 onClick={() => setShowPass((v) => !v)}
-                className="absolute top-1/2 -translate-y-1/2 start-3"
+                className="absolute top-1/2 -translate-y-1/2 left-3"
                 style={{ color: errors.password ? '#ef4444' : '#9a9a9e' }}
               >
                 <i className={`fa-solid ${showPass ? 'fa-eye-slash' : 'fa-eye'} text-sm`} />

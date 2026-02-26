@@ -103,9 +103,9 @@ export default function CatalogClient({ categories, initialProducts, initialPara
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder={t.catalog.searchPlaceholder}
-              className="input-dark font-cairo pe-4 ps-10"
+              className="input-dark font-cairo input-icon-s"
             />
-            <i className="fa-solid fa-search absolute top-1/2 -translate-y-1/2 inset-s-3" style={{ color: '#9a9a9e' }} />
+            <i className="fa-solid fa-search absolute top-1/2 -translate-y-1/2 start-3" style={{ color: '#9a9a9e' }} />
           </div>
 
           {/* Categories */}

@@ -118,14 +118,14 @@ export default function SignupPage() {
             <div className="relative">
               <input
                 type="text"
-                className="input-dark w-full pe-10"
+                className="input-dark w-full input-icon-r"
                 style={errors.name ? { borderColor: '#ef4444' } : {}}
                 placeholder={ar ? 'محمد احمد' : 'John Smith'}
                 value={form.name}
                 onChange={(e) => setField('name', e.target.value)}
               />
               <i
-                className="fa-solid fa-user absolute top-1/2 -translate-y-1/2 end-3 text-sm pointer-events-none"
+                className="fa-solid fa-user absolute top-1/2 -translate-y-1/2 right-3 text-sm pointer-events-none"
                 style={{ color: errors.name ? '#ef4444' : '#9a9a9e' }}
               />
             </div>
@@ -138,7 +138,7 @@ export default function SignupPage() {
             <div className="relative">
               <input
                 type="email"
-                className="input-dark w-full ps-10"
+                className="input-dark w-full input-icon-l"
                 style={errors.email ? { borderColor: '#ef4444' } : {}}
                 placeholder="you@example.com"
                 dir="ltr"
@@ -147,7 +147,7 @@ export default function SignupPage() {
                 autoComplete="email"
               />
               <i
-                className="fa-solid fa-envelope absolute top-1/2 -translate-y-1/2 start-3 text-sm pointer-events-none"
+                className="fa-solid fa-envelope absolute top-1/2 -translate-y-1/2 left-3 text-sm pointer-events-none"
                 style={{ color: errors.email ? '#ef4444' : '#9a9a9e' }}
               />
             </div>
@@ -160,7 +160,7 @@ export default function SignupPage() {
             <div className="relative">
               <input
                 type="tel"
-                className="input-dark w-full ps-10 font-mono"
+                className="input-dark w-full input-icon-l font-mono"
                 style={errors.phone ? { borderColor: '#ef4444' } : {}}
                 placeholder="01012345678"
                 dir="ltr"
@@ -168,7 +168,7 @@ export default function SignupPage() {
                 onChange={(e) => setField('phone', e.target.value)}
               />
               <i
-                className="fa-solid fa-phone absolute top-1/2 -translate-y-1/2 start-3 text-sm pointer-events-none"
+                className="fa-solid fa-phone absolute top-1/2 -translate-y-1/2 left-3 text-sm pointer-events-none"
                 style={{ color: errors.phone ? '#ef4444' : '#9a9a9e' }}
               />
             </div>
@@ -181,7 +181,7 @@ export default function SignupPage() {
             <div className="relative">
               <input
                 type={showPass ? 'text' : 'password'}
-                className="input-dark w-full ps-10"
+                className="input-dark w-full input-icon-l"
                 style={errors.password ? { borderColor: '#ef4444' } : {}}
                 placeholder={ar ? '٨ أحرف على الأقل' : 'At least 8 characters'}
                 dir="ltr"
@@ -192,7 +192,7 @@ export default function SignupPage() {
               <button
                 type="button"
                 onClick={() => setShowPass((v) => !v)}
-                className="absolute top-1/2 -translate-y-1/2 start-3"
+                className="absolute top-1/2 -translate-y-1/2 left-3"
                 style={{ color: errors.password ? '#ef4444' : '#9a9a9e' }}
               >
                 <i className={`fa-solid ${showPass ? 'fa-eye-slash' : 'fa-eye'} text-sm`} />
@@ -207,7 +207,7 @@ export default function SignupPage() {
             <div className="relative">
               <input
                 type={showPass ? 'text' : 'password'}
-                className="input-dark w-full pe-10"
+                className="input-dark w-full input-icon-r"
                 style={errors.confirmPassword ? { borderColor: '#ef4444' } : {}}
                 placeholder={ar ? 'أعد كتابة كلمة المرور' : 'Re-enter your password'}
                 dir="ltr"
@@ -217,7 +217,7 @@ export default function SignupPage() {
               />
               {form.confirmPassword && (
                 <i
-                  className={`fa-solid ${form.password === form.confirmPassword ? 'fa-circle-check' : 'fa-circle-xmark'} absolute top-1/2 -translate-y-1/2 end-3 text-sm pointer-events-none`}
+                  className={`fa-solid ${form.password === form.confirmPassword ? 'fa-circle-check' : 'fa-circle-xmark'} absolute top-1/2 -translate-y-1/2 right-3 text-sm pointer-events-none`}
                   style={{ color: form.password === form.confirmPassword ? '#4ade80' : '#ef4444' }}
                 />
               )}
